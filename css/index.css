@@ -1,0 +1,85 @@
+.navbar-brand{
+	font-family: 'Merriweather', serif; 
+	font-weight: bold; 
+	font-size: 30px; 
+	color: #bfbfbf;
+}
+
+.navbar-brand:hover {
+	color: #ffffff;
+}
+
+.nav-font{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	color: #bfbfbf;
+}
+
+.nav-font:hover {
+	color: #ffffff;
+}
+
+.overlay {
+    height: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: -25px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 30px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+.overlay-content :hover{
+    color: #ff7100;
+}
+
+.closebtn:hover{
+    color: #ff7100;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+.myImage{
+	width: 270px;
+	height: 300px;
+	border-radius: 100%;
+}
+
+.findMore{
+	border-radius: 60px;
+	background-color: #073848;
+}
