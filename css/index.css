@@ -2,7 +2,7 @@
 	font-family: 'Merriweather', serif; 
 	font-weight: bold; 
 	font-size: 30px; 
-	color: #bfbfbf;
+	color: #cfcfcf;
 }
 
 .navbar-brand:hover {
@@ -12,65 +12,22 @@
 .nav-font{
 	font-family: 'Open Sans', sans-serif;
 	font-size: 20px;
-	color: #bfbfbf;
+	color: #cfcfcf;
 }
 
 .nav-font:hover {
-	color: #ffffff;
+	color: #ff3232;
 }
 
-.overlay {
-    height: 0;
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0, 0.9);
-    overflow-x: hidden;
-    transition: 0.5s;
-}
-
-.overlay-content {
-    position: relative;
-    top: 25%;
-    width: 100%;
-    text-align: center;
-    margin-top: -25px;
-}
-
-.overlay a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 30px;
-    color: #ffffff;
-    display: block;
-    transition: 0.3s;
-}
-
-.overlay .closebtn {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
-}
-
-.overlay-content :hover{
-    color: #ff7100;
-}
-
-.closebtn:hover{
-    color: #ff7100;
-}
-
-@media screen and (max-height: 450px) {
-  .overlay a {font-size: 20px}
-  .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-  }
+@media only screen and (max-width: 992px){
+	.nav-font{
+		font-family: 'Open Sans', sans-serif;
+		font-size: 18px;
+		color: #000000;
+	}
+	.nav-font:hover {
+		color: #ff3232;
+	}
 }
 
 .myImage{
@@ -81,5 +38,29 @@
 
 .findMore{
 	border-radius: 60px;
-	background-color: #073848;
+}
+
+.hamburger {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
 }
