@@ -21,10 +21,94 @@
 		    var windowWidth = $(window).width();
 		    var windowHeight = $(window).height();
 
+		    $('.nav-font').css("color","#cfcfcf");
+	    	$('.nav-font').hover(
+	  			function(){
+	  				$(this).css("color","#ff3232");
+	  			},
+	  			function(){
+	  				$(this).css("color","#cfcfcf");
+	  			}
+	  		);
+		    $('.navbar-brand').css("color","#cfcfcf");
+		    $('.navbar-brand').hover(
+	  			function(){
+	  				$(this).css("color","#ff3232");
+	  			},
+	  			function(){
+	  				$(this).css("color","#cfcfcf");
+	  			}
+	  		);
+
 		    if (windowWidth<992) {
 		    	$('#navbar').css("background-color","rgba(255,255,255,1)");
 		  		$('.navbar-brand').css("color","#ff1919");
+		  		$('.navbar-brand').hover(
+		  			function(){
+		  				$(this).css("color","#ff3232");
+		  			},
+		  			function(){
+		  				$(this).css("color","#ff3232");
+		  			}
+		  		);
+		  		$('.nav-font').css("color","#000000");
+		  		$('.nav-font').hover(
+		  			function(){
+		  				$(this).css("color","#ff3232");
+		  			},
+		  			function(){
+		  				$(this).css("color","#000000");
+		  			}
+		  		);
 		    }
+
+		    if (windowWidth>991) {
+			    $(window).scroll(function(){
+	            	if ($(this).scrollTop() > 100) {
+	                	$('#navbar').css("background-color","rgba(255,255,255,1)");
+	                	$('.navbar-brand').css("color","#ff1919");
+	                	$('.navbar-brand').hover(
+				  			function(){
+				  				$(this).css("color","#ff1919");
+				  			},
+				  			function(){
+				  				$(this).css("color","#ff1919");
+				  			}
+				  		);
+	                	$('.nav-font').css("color","#000000");
+			            $('.nav-font').hover(
+				  			function(){
+				  				$(this).css("color","#ff3232");
+				  			},
+				  			function(){
+				  				$(this).css("color","#000000");
+				  			}
+				  		);    	
+	            	}
+	            	else {
+	            		$('#navbar').css("background-color","rgba(0,0,0,0)");
+	            		$('.navbar-brand').css("color","#cfcfcf");
+	            		$('.navbar-brand').hover(
+				  			function(){
+				  				$(this).css("color","#ff1919");
+				  			},
+				  			function(){
+				  				$(this).css("color","#cfcfcf");
+				  			}
+				  		);
+				  		$('.nav-font').css("color","#cfcfcf");
+				  		$('.nav-font').hover(
+				  			function(){
+				  				$(this).css("color","#ff3232");
+				  			},
+				  			function(){
+				  				$(this).css("color","#cfcfcf");
+				  			}
+				  		); 
+	            	} 
+	        	});
+			}
+
 
 		    $('#homebgimage').height(windowHeight);
 
@@ -56,7 +140,7 @@
 </head>
 <body>
 
-	<nav class="navbar navbar-expand-lg fixed-top" id="navbar" style="background-color: rgba(0,0,0,0.1);">
+	<nav class="navbar navbar-expand-lg fixed-top" id="navbar" style="background-color: rgba(0,0,0,0);">
 		<div class="container">
 		  <a class="navbar-brand" href="#" style="">Shivam.vk</a>
 		   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -102,7 +186,7 @@
 	<br><br>
 
 	<div class="About container text-center" id="about">
-		<span style="font-family: 'Merriweather', serif; font-size: 32px">About</span>
+		<span style="font-family: 'Merriweather', serif; font-size: 32px">About me</span>
 		<hr style="width: 60px; height: 2px; background-color: #ff1919; border-color: #ff1919">
 	</div>
 
