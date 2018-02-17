@@ -36,6 +36,20 @@
 	border-radius: 100%;
 }
 
+@media only screen and (max-width: 450px){
+	.myImage{
+		width: 270px;
+		height: 270px;
+	}
+}
+
+@media only screen and (max-width: 371px){
+	.myImage{
+		width: 260px;
+		height: 260px;
+	}
+}
+
 .findMore{
 	border-radius: 60px;
 }
