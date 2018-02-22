@@ -18,6 +18,11 @@
 	<script src="https://code.jquery.com/jquery-latest.js"></script>
 	<script>
 		$(document).ready(function(){
+
+			$('#Personalinfo').fadeIn(400);
+			$('#Professionalinfo').fadeOut(400);
+			$('#Technicalinfo').fadeOut(400);
+
 		    var windowWidth = $(window).width();
 		    var windowHeight = $(window).height();
 
@@ -136,6 +141,32 @@
 		    $('body, html').animate({scrollTop: pos},1000);
 		});
 	</script>
+	<script type="text/javascript">
+		function personalclick(){
+			$('#Professionalinfo').fadeOut(400);
+			$('#Technicalinfo').fadeOut(400);
+			$('#Personalinfo').fadeIn(600);
+			$('#Personal').css("color","#ff1919");
+			$('#Professional').css("color","#000000");
+			$('#Technical').css("color","#000000");
+		}
+		function professionalclick(){
+			$('#Personalinfo').fadeOut(400);
+			$('#Technicalinfo').fadeOut(400);
+			$('#Professionalinfo').fadeIn(600);
+			$('#Personal').css("color","#000000");
+			$('#Professional').css("color","#ff1919");
+			$('#Technical').css("color","#000000");
+		}
+		function technicalclick(){
+			$('#Personalinfo').fadeOut(400);
+			$('#Professionalinfo').fadeOut(400);
+			$('#Technicalinfo').fadeIn(600);
+			$('#Personal').css("color","#000000");
+			$('#Professional').css("color","#000000");
+			$('#Technical').css("color","#ff1919");
+		}
+	</script>
 	<title>Shivam Bhasin</title>
 </head>
 <body>
@@ -188,6 +219,18 @@
 	<div class="About container text-center" id="about">
 		<span style="font-family: 'Merriweather', serif; font-size: 32px">About me</span>
 		<hr style="width: 60px; height: 2px; background-color: #ff1919; border-color: #ff1919">
+		<span id="Personal" onclick="personalclick()" onmouseover="personalclick()" style="color: #ff1919">Personal&nbsp</span><i class="fa fa-circle" style="font-size:16px"></i>
+		<span id="Professional" onclick="professionalclick()" onmouseover="professionalclick()" style="color: #000000">Professional&nbsp</span><i class="fa fa-circle" style="font-size:16px"></i>
+		<span id="Technical" onclick="technicalclick()" onmouseover="technicalclick()" style="color: #000000">Technical</span>
+		<div id="Personalinfo">
+			<h1>Personal</h1>
+		</div>
+		<div id="Professionalinfo">
+			<h1>Professional</h1>
+		</div>
+		<div id="Technicalinfo">
+			<h1>Technical</h1>
+		</div>
 	</div>
 
 </body>
