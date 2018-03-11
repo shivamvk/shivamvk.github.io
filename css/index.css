@@ -58,9 +58,38 @@
     transform: rotate(-45deg) translate(-9px, 6px);
 }
 
-.change .bar2 {opacity: 0;}
+.change .bar2 {
+	opacity: 0;
+}
 
 .change .bar3 {
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
+}
+
+#myProgress {
+    width: 100%;
+    background-color: grey;
+}
+#myBar {
+    width: 1%;
+    height: 30px;
+    background-color: #e50000;
+}
+
+.pic { 
+	margin: 0px;
+    padding: 0px;
+    position: relative;
+    display: block;
+    box-sizing: border-box;   
+}
+
+.projectheading{
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.projectdetail{
+	font-size: 16px;
 }
