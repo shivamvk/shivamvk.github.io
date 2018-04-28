@@ -34,8 +34,8 @@
 		    $('.nav-font').css("color","#cfcfcf");
 		    $('.yesbtn').css("background-color","#ffffff");
 		    $('.yestext').css("color","#ff3232");
-		    $('.nobtn').css("background-color","#ffffff");
-		    $('.notext').css("color","#ff3232");
+		    $('.submitbtn').css("background-color","#ffffff");
+		    $('.submitbtntext').css("color","#ff3232");
 		    $('.yesbtn').hover(
 		    	function(){
 		    		$(this).css("background-color","#ff3232");
@@ -46,14 +46,19 @@
 		    		$('.yestext').css("color","#ff3232");
 		    	}
 		    );
-		    $('.nobtn').hover(
+			$(".yesbtn").click(
+				function(){
+			        $("#worktogetherform").slideToggle("slow");
+			    }
+			);
+		    $('.submitbtn').hover(
 		    	function(){
 		    		$(this).css("background-color","#ff3232");
-		    		$('.notext').css("color","#ffffff");
+		    		$('.submitbtntext').css("color","#ffffff");
 		    	},
 		    	function(){
 		    		$(this).css("background-color","#ffffff");
-		    		$('.notext').css("color","#ff3232");
+		    		$('.submitbtntext').css("color","#ff3232");
 		    	}
 		    );
 	    	$('.nav-font').hover(
@@ -350,11 +355,10 @@
 		<br>
 		<div class="container text-center">
 			<h3 class="" style="color: #ffffff">Want to work together on a project?</h3>
-			<a href="" class="btn btn-md yesbtn"><span class="yestext" style="font-weight: bold">Yes</span></a>
-			<a href="" class="btn btn-md nobtn"><span class="notext" style="font-weight: bold">No</span></a>
+			<a class="btn btn-md yesbtn"><span class="yestext" style="font-weight: bold">Yes</span></a>
 		</div>
 		<br>
-		<div class="container" style="color: #ffffff">
+		<div class="container" id="worktogetherform" style="color: #ffffff; display: none;">
 			<form action="https://formspree.io/shivam.vk529@gmail.com" method="post">
 			  <div class="form-group">
 			    <label for="projectname">Project name:</label>
@@ -372,11 +376,19 @@
 			  	<label for="githublink">Github link:</label>
 			  	<input type="link" class="form-control" name="Github Link" placeholder="Your project's link (leave it empty if your project is not yet on github)" id="githublink">
 			  </div>
-			  <button type="submit" class="btn btn-md submitbtn">Submit</button>
+			  <button type="submit" class="btn btn-md submitbtn"><span style="font-weight: bold;" class="submitbtntext">Submit</span></button>
 			</form>
+			<br>
 		</div>
 	</div>
 
+	<br><br><br> 
+	<br><br><br> 
+	<br><br><br> 
+	<br><br><br> 
+	<br><br><br> 
+	<br><br><br> 
+	<br><br><br> 
 	<br><br><br>                            
 
 </body>
