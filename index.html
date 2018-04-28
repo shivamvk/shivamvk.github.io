@@ -32,6 +32,30 @@
 		    var windowHeight = $(window).height();
 
 		    $('.nav-font').css("color","#cfcfcf");
+		    $('.yesbtn').css("background-color","#ffffff");
+		    $('.yestext').css("color","#ff3232");
+		    $('.nobtn').css("background-color","#ffffff");
+		    $('.notext').css("color","#ff3232");
+		    $('.yesbtn').hover(
+		    	function(){
+		    		$(this).css("background-color","#ff3232");
+		    		$('.yestext').css("color","#ffffff");
+		    	},
+		    	function(){
+		    		$(this).css("background-color","#ffffff");
+		    		$('.yestext').css("color","#ff3232");
+		    	}
+		    );
+		    $('.nobtn').hover(
+		    	function(){
+		    		$(this).css("background-color","#ff3232");
+		    		$('.notext').css("color","#ffffff");
+		    	},
+		    	function(){
+		    		$(this).css("background-color","#ffffff");
+		    		$('.notext').css("color","#ff3232");
+		    	}
+		    );
 	    	$('.nav-font').hover(
 	  			function(){
 	  				$(this).css("color","#ff3232");
@@ -200,7 +224,7 @@
 	    	</ul>
 		  	<ul class="navbar-nav justify-content-end">
 		  		<li class="nav-item">
-	        		<a href="" class="nav-link"><span class="nav-font"><b>Home</b></span></a>
+	        		<a href="#home" class="nav-link js-scroll-trigger"><span class="nav-font"><b>Home</b></span></a>
 	      		</li>
 	      		<li>
 	      			<a href="#about" class="nav-link js-scroll-trigger"><span class="nav-font"><b>About</b></span></a>
@@ -220,7 +244,7 @@
 		<img src="images/homebggrad2.gif" id="homebgimage" style="width: 100%; background: linear-gradient(rgba(255,255,255,0.4), rgba(0,0,0,0.4));">
 	</div>
 
-	<div class="text-center" style="position: absolute;top: 57%; left: 50%; transform: translate(-50%, -50%);">
+	<div class="text-center" id="home" style="position: absolute;top: 57%; left: 50%; transform: translate(-50%, -50%);">
 		<img src="images/shivam.jpg" class="myImage img img-thumbnail"><br>
 		<span style="font-family: 'Open Sans', sans-serif; font-weight: bold; font-size: 26px; color: #efefef">Shivam Bhasin</span><br>
 		<span style="font-family: 'Merriweather', serif; font-weight: bold; font-size: 20px; color: #efefef">Web & Android Developer</span><br><br>
@@ -275,7 +299,13 @@
 	<div class="container text-center">
 
 		<div class="row">
-			<div class="view overlay col-lg-4 col-md-4 col-sm-4 col-xs-4" onclick="window.location.assign('https://github.com/shivamvk/NewsApp')">
+			<div class="view overlay col-lg-4 col-md-4 col-sm-4 col-xs-4" target="_blank" onclick="window.location.assign('https://github.com/shivamvk/MoviesIMDB')">
+			    <img src="images/MoviesIMDB.png" class="projectimage" alt="" style="width: 110%; height: 100%;">
+			    <div class="mask flex-center rgba-stylish-strong">
+			        <p class="white-text"><span class="projectheading">Movies IMDB</span><br><span class="projectdetail">A movies rating app</span><br><br><span class="clickdetail">Click for more details.</span></p>
+			    </div>
+			</div>
+			<div class="view overlay col-lg-4 col-md-4 col-sm-4 col-xs-4" target="_blank" onclick="window.location.assign('https://github.com/shivamvk/NewsApp')">
 			    <img src="images/NewsApp.jpg" class="projectimage" alt="" style="width: 110%; height: 100%;">
 			    <div class="mask flex-center rgba-stylish-strong">
 			        <p class="white-text"><span class="projectheading">News App</span><br><span class="projectdetail">A news android app using RecyclerView.</span><br><br><span class="clickdetail">Click for more details.</span></p>
@@ -285,12 +315,6 @@
 			    <img src="images/JustForFun.jpg" class="projectimage" alt="" style="width: 110%; height: 100%;">
 			    <div class="mask flex-center rgba-stylish-strong">
 			        <p class="white-text"><span class="projectheading">FriendlyChat App</span><br><span class="projectdetail">A chat room app using firebase.</span><br><br><span class="clickdetail">Click for more details.</span></p>
-			    </div>
-			</div>
-			<div class="view overlay col-lg-4 col-md-4 col-sm-4 col-xs-4">
-			    <img src="images/PetsCatalog.png" class="projectimage" alt="" style="width: 110%; height: 100%;">
-			    <div class="mask flex-center rgba-stylish-strong">
-			        <p class="white-text"><span class="projectheading">PetsCatalog App</span><br><span class="projectdetail">A Pets Catalog app using Content Providrs.</span><br><br><span class="clickdetail">Click for more details.</span></p>
 			    </div>
 			</div>
 		</div>
@@ -298,22 +322,22 @@
 		<br>
 
 		<div class="row">
-			<div class="view overlay col-lg-4 col-md-4 col-sm-4 col-xs-4" onclick="window.location.assign('https://github.com/shivamvk/NewsApp')">
-			    <img src="images/NewsApp.jpg" class="projectimage" alt="" style="width: 110%; height: 100%;">
-			    <div class="mask flex-center rgba-stylish-strong">
-			        <p class="white-text"><span class="projectheading">News App</span><br><span class="projectdetail">A news android app using RecyclerView.</span><br><br><span class="clickdetail">Click for more details.</span></p>
-			    </div>
-			</div>
-			<div class="view overlay col-lg-4 col-md-4 col-sm-4 col-xs-4">
-			    <img src="images/JustForFun.jpg" class="projectimage" alt="" style="width: 110%; height: 100%;">
-			    <div class="mask flex-center rgba-stylish-strong">
-			        <p class="white-text"><span class="projectheading">FriendlyChat App</span><br><span class="projectdetail">A chat room app using firebase.</span><br><br><span class="clickdetail">Click for more details.</span></p>
-			    </div>
-			</div>
 			<div class="view overlay col-lg-4 col-md-4 col-sm-4 col-xs-4">
 			    <img src="images/PetsCatalog.png" class="projectimage" alt="" style="width: 110%; height: 100%;">
 			    <div class="mask flex-center rgba-stylish-strong">
 			        <p class="white-text"><span class="projectheading">PetsCatalog App</span><br><span class="projectdetail">A Pets Catalog app using Content Providrs.</span><br><br><span class="clickdetail">Click for more details.</span></p>
+			    </div>
+			</div>
+			<div class="view overlay col-lg-4 col-md-4 col-sm-4 col-xs-4" onclick="window.location.assign('https://snipped-d4559.firebaseapp.com/')">
+			    <img src="images/Snipped.png" class="projectimage" alt="" style="width: 110%; height: 100%;">
+			    <div class="mask flex-center rgba-stylish-strong">
+			        <p class="white-text"><span class="projectheading">Salon Booking App</span><br><span class="projectdetail">A web app that allows user to<br>select a beauty service and book a salon for it.</span><br><br><span class="clickdetail">Click for more details.</span></p>
+			    </div>
+			</div>
+			<div class="view overlay col-lg-4 col-md-4 col-sm-4 col-xs-4">
+			    <img src="images/Plus.png" class="projectimage" alt="" style="width: 110%; height: 100%;">
+			    <div class="mask flex-center rgba-stylish-strong">
+			        <p class="white-text"><span class="projectheading">Other projects.</span><br><span class="projectdetail">Click to view more projects.</span><br><br><span class="clickdetail"></span></p>
 			    </div>
 			</div>
 		</div>
@@ -322,29 +346,38 @@
 
 	<br><br><br>
 
-		<div class="container">
-		<div id="disqus_thread"></div>
-		<script>
-
-		/**
-		*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-		*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-		
-		var disqus_config = function () {
-		this.page.url = 'https://shivamvk.github.io/';  // Replace PAGE_URL with your page's canonical URL variable
-		this.page.identifier = '1'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-		};
-		
-		(function() { // DON'T EDIT BELOW THIS LINE
-		var d = document, s = d.createElement('script');
-		s.src = 'https://shivamvk-github-io.disqus.com/embed.js';
-		s.setAttribute('data-timestamp', +new Date());
-		(d.head || d.body).appendChild(s);
-		})();
-		</script>
-		<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+	<div class="" style="background-color: #ff3232">
+		<br>
+		<div class="container text-center">
+			<h3 class="" style="color: #ffffff">Want to work together on a project?</h3>
+			<a href="" class="btn btn-md yesbtn"><span class="yestext" style="font-weight: bold">Yes</span></a>
+			<a href="" class="btn btn-md nobtn"><span class="notext" style="font-weight: bold">No</span></a>
 		</div>
-                            
+		<br>
+		<div class="container" style="color: #ffffff">
+			<form action="https://formspree.io/shivam.vk529@gmail.com" method="post">
+			  <div class="form-group">
+			    <label for="projectname">Project name:</label>
+			    <input type="text" class="form-control" name="Project Name" placeholder="Name your project" id="projectname" required="">
+			  </div>
+			  <div class="form-group">
+			    <label for="projectdescription">Project description:</label>
+			    <input type="text" class="form-control" name="Project Description" placeholder="Describe your project in a line or two" id="projectdescription" required="">
+			  </div>
+			  <div class="form-group">
+			  	<label for="email">Your email:</label>
+			  	<input type="email" class="form-control" name="Email id" placeholder="Your contact email" id="email" required="">
+			  </div>
+			  <div class="form-group">
+			  	<label for="githublink">Github link:</label>
+			  	<input type="link" class="form-control" name="Github Link" placeholder="Your project's link (leave it empty if your project is not yet on github)" id="githublink">
+			  </div>
+			  <button type="submit" class="btn btn-md submitbtn">Submit</button>
+			</form>
+		</div>
+	</div>
+
+	<br><br><br>                            
 
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.slim.js"></script>
