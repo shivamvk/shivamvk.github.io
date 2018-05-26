@@ -93,3 +93,23 @@
 .projectdetail{
 	font-size: 16px;
 }
+
+.ldBar-label {
+	display: none;
+}
+
+.ldBar{
+	width: 70%;
+	height: 70%;
+	margin: auto;
+}
+
+@media only screen and (max-width: 576px){
+	.ldBar{
+		width: 10px;
+		height: 10px;
+		margin: auto;
+		align-self: center;
+	}
+}
+
