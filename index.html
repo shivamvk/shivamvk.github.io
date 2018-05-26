@@ -14,6 +14,8 @@
 	<link rel="stylesheet" type="text/css" href="css/mdb.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="loading-bar.css"/>
+	<script type="text/javascript" src="js/loading-bar.js"></script>
 	<!--hamburger effects-->
 	<script>
 		function myFunction(x) {
@@ -24,10 +26,6 @@
 	<script>
 		$(document).ready(function(){
 
-			$('#Personalinfo').fadeIn(400);
-			$('#Professionalinfo').fadeOut(400);
-			$('#Technicalinfo').fadeOut(400);
-
 		    var windowWidth = $(window).width();
 		    var windowHeight = $(window).height();
 
@@ -36,6 +34,10 @@
 		    $('.yestext').css("color","#ff3232");
 		    $('.submitbtn').css("background-color","#ffffff");
 		    $('.submitbtntext').css("color","#ff3232");
+	  		$('.seewhoiam').css("background-color","#ffffff");
+		    $('.seewhoiamtext').css("color","#ff3232");
+		    $('.seemywork').css("background-color","#ffffff");
+		    $('.seemyworktext').css("color","#ff3232");
 		    $('.yesbtn').hover(
 		    	function(){
 		    		$(this).css("background-color","#ff3232");
@@ -76,6 +78,15 @@
 	  			},
 	  			function(){
 	  				$(this).css("color","#cfcfcf");
+	  			}
+	  		);
+	  		$('.whoiamlink').css("color","#000000");
+	  		$('.whoiamlink').hover(
+	  			function(){
+	  				$(this).css("color","#ff3232");
+	  			},
+	  			function(){
+	  				$(this).css("color","#000000");
 	  			}
 	  		);
 
@@ -180,35 +191,6 @@
 		    $('body, html').animate({scrollTop: pos},1000);
 		});
 	</script>
-	<script type="text/javascript">
-		function personalclick(){
-			$('#Professionalinfo').fadeOut(0);
-			$('#Technicalinfo').fadeOut(0);
-			$('#Personalinfo').fadeIn(400);
-			$('#Personal').css("color","#ff1919");
-			$('#Professional').css("color","#000000");
-			$('#Technical').css("color","#000000");
-			move();
-		}
-		function professionalclick(){
-			$('#Personalinfo').fadeOut(0);
-			$('#Technicalinfo').fadeOut(0);
-			$('#Professionalinfo').fadeIn(400);
-			$('#Personal').css("color","#000000");
-			$('#Professional').css("color","#ff1919");
-			$('#Technical').css("color","#000000");
-			move();
-		}
-		function technicalclick(){
-			$('#Personalinfo').fadeOut(0);
-			$('#Professionalinfo').fadeOut(0);
-			$('#Technicalinfo').fadeIn(400);
-			$('#Personal').css("color","#000000");
-			$('#Professional').css("color","#000000");
-			$('#Technical').css("color","#ff1919");
-			move();
-		}
-	</script>
 	<title>Shivam Bhasin</title>
 </head>
 <body>
@@ -232,10 +214,13 @@
 	        		<a href="#home" class="nav-link js-scroll-trigger"><span class="nav-font"><b>Home</b></span></a>
 	      		</li>
 	      		<li>
-	      			<a href="#about" class="nav-link js-scroll-trigger"><span class="nav-font"><b>About</b></span></a>
+	      			<a href="#homescroll" class="nav-link js-scroll-trigger"><span class="nav-font"><b>About</b></span></a>
 	      		</li>
 	      		<li>
-	      			<a href="#portfolio" class="nav-link js-scroll-trigger"><span class="nav-font"><b>Portfolio</b></span></a>
+	      			<a href="#portfolioscroll" class="nav-link js-scroll-trigger"><span class="nav-font"><b>Portfolio</b></span></a>
+	      		</li>
+	      		<li>
+	      			<a href="#myfortescroll" class="nav-link js-scroll-trigger"><span class="nav-font"><b>Forte</b></span></a>
 	      		</li>
 	      		<li>
 	      			<a href="" class="nav-link"><span class="nav-font"><b>Contact</b></span></a>
@@ -249,6 +234,8 @@
 		<img src="images/homebggrad2.gif" id="homebgimage" style="width: 100%; background: linear-gradient(rgba(255,255,255,0.4), rgba(0,0,0,0.4));">
 	</div>
 
+	<div id="homescroll"></div>
+
 	<div class="text-center" id="home" style="position: absolute;top: 57%; left: 50%; transform: translate(-50%, -50%);">
 		<img src="images/shivam.jpg" class="myImage img img-thumbnail"><br>
 		<span style="font-family: 'Open Sans', sans-serif; font-weight: bold; font-size: 26px; color: #efefef">Shivam Bhasin</span><br>
@@ -258,43 +245,67 @@
 
 	<br><br>
 
-	<div class="About container text-center" id="about">
-		<span style="font-family: 'Merriweather', serif; font-size: 32px">About me</span>
-		<hr style="width: 60px; height: 2px; background-color: #ff1919; border-color: #ff1919">
-		<span id="Personal" onclick="personalclick()" onmouseover="personalclick()" style="color: #ff1919">Personal&nbsp</span><i class="fa fa-circle" style="font-size:16px"></i>
-		<span id="Professional" onclick="professionalclick()" onmouseover="professionalclick()" style="color: #000000">Professional&nbsp</span><i class="fa fa-circle" style="font-size:16px"></i>
-		<span id="Technical" onclick="technicalclick()" onmouseover="technicalclick()" style="color: #000000">Technical</span>
-		<div id="Personalinfo">
-			<h1>Personal info</h1>
-			<br><br><br><br>
-		</div>
-		<div id="Professionalinfo">
-			<h1>Professional info</h1>
-			<br><br><br><br>
-		</div>
-		<div id="Technicalinfo">
+	<div id="aboutscroll"></div>
+
+	<div style="background-color: #ff3232">
+		<div class="About container text-center" id="about">
 			<br><br>
-			<script type="text/javascript">
-				function move() {
-				    var elem = document.getElementById("myBar"); 
-				    var width = 1;
-				    var id = setInterval(frame, 15);
-				    function frame() {
-				        if (width >= 70) {
-				            clearInterval(id);
-				        } else {
-				            width++; 
-				            elem.style.width = width + '%'; 
-				        }
-				    }
-				}
-			</script>
-			<div id="myProgress">
-  				<div id="myBar" style="text-align: right; color: #ffffff; font-weight: bold">HTML5(70%)&nbsp&nbsp</div>
+			<span style="font-family: 'Merriweather', serif; font-size: 32px; color: #ffffff">Do you want to...</span>
+			<hr style="width: 60px; height: 2px; background-color: #ffffff; border-color: #ffffff">
+			<br><br>
+			<div class="row">
+				<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+					<a href="#whoiamscroll" class="btn js-scroll-trigger seewhoiam"><span class="seewhoiamtext" style="font-weight: bold;">See who I am?</span></a>
+				</div>
+				<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+					<a href="#portfolioscroll" class="btn js-scroll-trigger seemywork"><span class="seemyworktext" style="font-weight: bold;">See my work?</span></a>
+				</div>
 			</div>
-			<br><br><br><br>
 		</div>
+		<br><br><br>
 	</div>
+
+	<div id="whoiamscroll"></div>
+
+	<br><br><br><br>
+
+	<div class="container">
+
+		<div class="row">
+
+			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+				<div class="text-center" id="whoiam">
+					<span style="font-family: 'Merriweather', serif; font-size: 32px; text-align: center;">I am...</span>
+					<hr style="width: 60px; height: 2px; background-color: #ff1919; border-color: #ff1919">
+				</div>
+				<div class="container">
+					<p><i class="fa fa-address-book" style="font-size: 24px"></i>&nbsp&nbspa Student at <a href="" class="whoiamlink">Jaypee Institute of Information Technology</a></p>
+					<p><img src="images/android.png" width="25px" height="27px">&nbsp&nbspan Android Developer Intern at <a href="" class="whoiamlink">DevCoders</a></p>
+					<p><img src="images/webdeveloper.png" width="25px height27px">&nbsp&nbspa Web Developer Intern at <a href="" class="whoiamlink">Snipped</a></p>
+					<p><i class="fa fa-check-square-o" style="font-size: 24px"></i>&nbsp&nbspa Volunteer at <a href="" class="whoiamlink">Light de Literacy</a></p>
+				</div>				
+			</div>
+
+			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+				<div class="text-center" id="whoiam">
+					<span style="font-family: 'Merriweather', serif; font-size: 32px; text-align: center;">I was...</span>
+					<hr style="width: 60px; height: 2px; background-color: #ff1919; border-color: #ff1919">
+				</div>
+				<div class="container">
+					<p><img src="images/android.png" width="25px" height="27px">&nbsp&nbspan Android Developer at <a href="" class="whoiamlink">ATG, Bangalore</a></p>
+					<p><img src="images/webdeveloper.png" width="25px height27px">&nbsp&nbspa Web Developer Intern at <a href="" class="whoiamlink">Light de Litercy</a></p>
+					<p><img src="images/webdeveloper.png" width="25px height27px">&nbsp&nbspa Web Developer Intern at <a href="" class="whoiamlink">HiddenRamp</a></p>
+					<p><i class="fa fa-check-square-o" style="font-size: 24px"></i>&nbsp&nbspa Campus Ambassador at <a href="" class="whoiamlink">What After College</a></p>
+				</div>				
+			</div>
+
+		</div>
+
+	</div>
+
+	<div id="portfolioscroll"></div>
+
+	<br><br><br><br>
 
 	<div class="text-center" id="portfolio">
 		<span style="font-family: 'Merriweather', serif; font-size: 32px; text-align: center;">Portfolio</span>
@@ -354,8 +365,8 @@
 	<div class="" style="background-color: #ff3232">
 		<br>
 		<div class="container text-center">
-			<h3 class="" style="color: #ffffff">Want to work together on a project?</h3>
-			<a class="btn btn-md yesbtn"><span class="yestext" style="font-weight: bold">Yes</span></a>
+			<h3 class="" style="color: #ffffff">Liked my work?</h3>
+			<a class="btn btn-md yesbtn"><span class="yestext" style="font-weight: bold">Want to work together on a project?</span></a>
 		</div>
 		<br>
 		<div class="container" id="worktogetherform" style="color: #ffffff; display: none;">
@@ -382,14 +393,103 @@
 		</div>
 	</div>
 
+	<div id="myfortescroll"></div>
+
 	<br><br><br> 
-	<br><br><br> 
-	<br><br><br> 
-	<br><br><br> 
-	<br><br><br> 
-	<br><br><br> 
-	<br><br><br> 
-	<br><br><br>                            
+
+	<div class="text-center" id="myforte">
+		<span style="font-family: 'Merriweather', serif; font-size: 32px; text-align: center;">My Forte</span>
+		<hr style="width: 60px; height: 2px; background-color: #ff1919; border-color: #ff1919">
+	</div>           
+
+	<br><br>
+
+	<div class="container text-center">
+		<div class="row">
+
+			<div class="col fortecol forteandroid">
+				<div
+				class="ldBar label-center"
+				data-value="70"
+				data-preset="circle"
+				data-stroke="red"
+				></div>
+
+				<span>Android</span>	
+
+			</div>
+
+			<div class="col fortecol forteandroid">
+				<div
+				class="ldBar label-center"
+				data-value="80"
+				data-preset="circle"
+				data-stroke="red"
+				></div>	
+
+				<span>Java</span>
+
+			</div>
+
+			<div class="col fortecol forteandroid">
+				<div
+				class="ldBar label-center"
+				data-value="90"
+				data-preset="circle"
+				data-stroke="red"
+				></div>	
+
+				<span>HTML & CSS</span>
+
+			</div>
+
+			<div class="col fortecol forteandroid">
+				<div
+				class="ldBar label-center"
+				data-value="60"
+				data-preset="circle"
+				data-stroke="red"
+				></div>	
+
+				<span>JavaScript</span>
+
+			</div>
+
+			<div class="col fortecol forteandroid">
+				<div
+				class="ldBar label-center"
+				data-value="40"
+				data-preset="circle"
+				data-stroke="red"
+				></div>
+
+				<span>Python</span>	
+
+			</div>
+
+			<div class="col fortecol forteandroid">
+				<div
+				class="ldBar label-center"
+				data-value="80"
+				data-preset="circle"
+				data-stroke="red"
+				></div>
+
+				<span>C & C++</span>	
+
+			</div>
+
+		</div>
+	</div>	            
+
+	<br><br><br>
+	<br><br><br>
+	<br><br><br>
+	<br><br><br>
+	<br><br><br>
+	<br><br><br>
+	<br><br><br>
+	<br><br><br>
 
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.slim.js"></script>
