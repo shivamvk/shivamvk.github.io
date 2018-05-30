@@ -38,6 +38,8 @@
 		    $('.seewhoiamtext').css("color","#ff3232");
 		    $('.seemywork').css("background-color","#ffffff");
 		    $('.seemyworktext').css("color","#ff3232");
+		    $('.viewlocation').css("background-color","#ffffff");
+		    $('.viewlocationtext').css("color","#ff3232");
 		    $('.yesbtn').hover(
 		    	function(){
 		    		$(this).css("background-color","#ff3232");
@@ -89,6 +91,29 @@
 	  				$(this).css("color","#000000");
 	  			}
 	  		);
+	  		$('.viewlocation').hover(
+		    	function(){
+		    		$(this).css("background-color","#ff3232");
+		    		$('.viewlocationtext').css("color","#ffffff");
+		    	},
+		    	function(){
+		    		$(this).css("background-color","#ffffff");
+		    		$('.viewlocationtext').css("color","#ff3232");
+		    	}
+		    );
+			$(".viewlocation").click(
+				function(){
+			        $(".locationonmap").slideToggle("slow");
+			    }
+			);
+			$('.viewlocation').click(
+				function () {
+                 $('html, body').animate({
+                     scrollTop: $(document).height()
+                 },
+                 1500);
+                 return false;
+             });
 
 		    if (windowWidth<992) {
 		    	$('#navbar').css("background-color","rgba(255,255,255,1)");
@@ -207,7 +232,7 @@
   			</button>
 		  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 		  	<ul class="navbar-nav mr-auto"><!--mr-auto is placing the search option to the right-->
-	      
+	      		
 	    	</ul>
 		  	<ul class="navbar-nav justify-content-end">
 		  		<li class="nav-item">
@@ -225,6 +250,9 @@
 	      		<li>
 	      			<a href="" class="nav-link"><span class="nav-font"><b>Contact</b></span></a>
 	      		</li>
+	      		<li class="nav-item">
+	        		<a href="" class="nav-link js-scroll-trigger"><span class="nav-font"><b>Visit my Blog</b></span></a>
+	      		</li>
 		  	</ul>
 		  </div>
 	  	</div>
@@ -240,7 +268,7 @@
 		<img src="images/shivam.jpg" class="myImage img img-thumbnail"><br>
 		<span style="font-family: 'Open Sans', sans-serif; font-weight: bold; font-size: 26px; color: #efefef">Shivam Bhasin</span><br>
 		<span style="font-family: 'Merriweather', serif; font-weight: bold; font-size: 20px; color: #efefef">Web & Android Developer</span><br><br>
-		<a href="#about" class="btn btn-danger btn-lg findMore" style="color: #ffffff">&nbspKnow more&nbsp</a>
+		<a href="#homescroll" class="btn btn-danger btn-lg findMore" style="color: #ffffff">&nbspKnow more&nbsp</a>
 	</div>
 
 	<br><br>
@@ -281,7 +309,7 @@
 				<div class="container">
 					<p><i class="fa fa-address-book" style="font-size: 24px"></i>&nbsp&nbspa Student at <a href="" class="whoiamlink">Jaypee Institute of Information Technology</a></p>
 					<p><img src="images/android.png" width="25px" height="27px">&nbsp&nbspan Android Developer Intern at <a href="" class="whoiamlink">DevCoders</a></p>
-					<p><img src="images/webdeveloper.png" width="25px height27px">&nbsp&nbspa Web Developer Intern at <a href="" class="whoiamlink">Snipped</a></p>
+					<p><img src="images/webdeveloper.png" width="25px" height="27px">&nbsp&nbspa Web Developer Intern at <a href="" class="whoiamlink">Snipped</a></p>
 					<p><i class="fa fa-check-square-o" style="font-size: 24px"></i>&nbsp&nbspa Volunteer at <a href="" class="whoiamlink">Light de Literacy</a></p>
 				</div>				
 			</div>
@@ -293,8 +321,8 @@
 				</div>
 				<div class="container">
 					<p><img src="images/android.png" width="25px" height="27px">&nbsp&nbspan Android Developer at <a href="" class="whoiamlink">ATG, Bangalore</a></p>
-					<p><img src="images/webdeveloper.png" width="25px height27px">&nbsp&nbspa Web Developer Intern at <a href="" class="whoiamlink">Light de Litercy</a></p>
-					<p><img src="images/webdeveloper.png" width="25px height27px">&nbsp&nbspa Web Developer Intern at <a href="" class="whoiamlink">HiddenRamp</a></p>
+					<p><img src="images/webdeveloper.png" width="25px" height="27px">&nbsp&nbspa Web Developer Intern at <a href="" class="whoiamlink">Light de Litercy</a></p>
+					<p><img src="images/webdeveloper.png" width="25px" height="27px">&nbsp&nbspa Web Developer Intern at <a href="" class="whoiamlink">HiddenRamp</a></p>
 					<p><i class="fa fa-check-square-o" style="font-size: 24px"></i>&nbsp&nbspa Campus Ambassador at <a href="" class="whoiamlink">What After College</a></p>
 				</div>				
 			</div>
@@ -482,14 +510,40 @@
 		</div>
 	</div>	            
 
-	<br><br><br>
-	<br><br><br>
-	<br><br><br>
-	<br><br><br>
-	<br><br><br>
-	<br><br><br>
-	<br><br><br>
-	<br><br><br>
+	<div id="contactscroll"></div>
+
+	<br><br><br> 
+
+	<div style="background: #ff1919">
+
+		<div class="text-center" id="contact">
+			<br><br>
+			<span style="font-family: 'Merriweather', serif; font-size: 32px; text-align: center; color: #000000">Contact</span>
+			<hr style="width: 60px; height: 2px; background-color: #000000; border-color: #000000">
+			<br><br>
+		</div>
+
+		<div class="text-center">
+			<div class="container">
+				<h1 style="font-family: 'Merriweather', serif; text-align: center; color: #ffffff"><p>Shivam Bhasin</p></h1>
+				<p><a href="tel:8130583124"><i class="fa fa-phone" style="font-size: 24px; color: #ffffff">&nbsp&nbsp8130583124</i></a>&nbsp&nbsp &nbsp<i class="fa fa-whatsapp" style="font-size: 24px; color: #ffffff">&nbsp&nbsp9639241605</i></p>
+				<p><a href="mailto:shivamvk529@gmail.com"><i class="fa fa-envelope" style="font-size: 24px; color: #ffffff">&nbsp&nbspshivam.vk529@gmail.com</i></a></p>
+				<p><a class="btn btn-md viewlocation"><span class="viewlocationtext" style="font-weight: bold;">View Location</span></a></p>
+				<a href="https://www.facebook.com/shivambhasin29"><i class="fa fa-facebook-square" style="font-size: 24px; color: #ffffff"></i></a>&nbsp&nbsp
+				<a href="https://github.com/shivamvk"><i class="fa fa-github" style="font-size: 24px; color: #ffffff"></i></a>&nbsp&nbsp
+				<a href="https://plus.google.com/106784302031019395559"><i class="fa fa-google-plus-square" style="font-size: 24px; color: #ffffff"></i></a>&nbsp&nbsp
+				<a href="https://www.linkedin.com/in/shivam-bhasin-69a588158/"><i class="fa fa-linkedin-square" style="font-size: 24px; color: #ffffff"></i></a>&nbsp&nbsp
+				<a href="https://stackoverflow.com/users/8748038/shivam-bhasin"><i class="fa fa-stack-overflow" style="font-size: 24px; color: #ffffff"></i></a>&nbsp&nbsp
+				<a href="https://twitter.com/Shivam_vk5"><i class="fa fa-twitter-square" style="font-size: 24px; color: #ffffff"></i></a>
+			</div>
+			<br>
+		</div>
+
+	</div>
+
+	<div class="locationonmap" style="display: none;">
+		<img src="images/viewlocation.png" width="100%" height="40%">
+	</div>
 
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.slim.js"></script>
