@@ -29,6 +29,146 @@
 		    var windowWidth = $(window).width();
 		    var windowHeight = $(window).height();
 
+		    if(windowWidth > 1125){
+		    	$('.seewhoiam').fadeOut(0);
+		    	$('.seemywork').fadeOut(0);
+		    	$('#whoiam1').fadeOut(0);
+		    	$('#whoiam2').fadeOut(0);
+		    	$('#whoiam3').fadeOut(0);
+		    	$('#whoiam4').fadeOut(0);
+		    	$('#whoiwas1').fadeOut(0);
+		    	$('#whoiwas2').fadeOut(0);
+		    	$('#whoiwas3').fadeOut(0);
+		    	$('#whoiwas4').fadeOut(0);
+		    	$('.project1').fadeOut(0);
+		    	$('.project2').fadeOut(0);
+		    	$('.project3').fadeOut(0);
+		    	$('.project4').fadeOut(0);
+		    	$('.project5').fadeOut(0);
+		    	$('.project6').fadeOut(0);
+		    	$('.forte1').fadeOut(0);
+		    	$('.forte2').fadeOut(0);
+		    	$('.forte3').fadeOut(0);
+		    	$('.forte4').fadeOut(0);
+		    	$('.forte5').fadeOut(0);
+		    	$('.forte6').fadeOut(0);   	
+		    }
+
+		    $(window).scroll(function(){
+		    	if(windowWidth > 1125){
+		    		if ($(this).scrollTop() > 120) {
+                		$('.seewhoiam').fadeIn(1000);
+            		} else{
+              			$('.seewhoiam').fadeOut(0);
+            		}
+            		if ($(this).scrollTop() > 120) {
+                		$('.seemywork').fadeIn(1000);
+            		} else{
+              			$('.seemywork').fadeOut(0);
+            		}
+            		if ($(this).scrollTop() > 450) {
+                		$('#whoiam1').fadeIn(1000);
+            		} else{
+              			$('#whoiam1').fadeOut(0);
+            		}
+            		if ($(this).scrollTop() > 500) {
+                		$('#whoiwas1').fadeIn(1000);
+            		} else{
+              			$('#whoiwas1').fadeOut(0);
+            		}
+            		if ($(this).scrollTop() > 500) {
+                		$('#whoiam2').fadeIn(1600);
+            		} else{
+              			$('#whoiam2').fadeOut(0);
+            		}
+            		if ($(this).scrollTop() > 500) {
+                		$('#whoiwas2').fadeIn(1600);
+            		} else{
+              			$('#whoiwas2').fadeOut(0);
+            		}
+            		if ($(this).scrollTop() > 500) {
+                		$('#whoiam3').fadeIn(2200);
+            		} else{
+              			$('#whoiam3').fadeOut(0);
+            		}
+            		if ($(this).scrollTop() > 500) {
+                		$('#whoiwas3').fadeIn(2200);
+            		} else{
+              			$('#whoiwas3').fadeOut(0);
+            		}
+            		if ($(this).scrollTop() > 500) {
+                		$('#whoiam4').fadeIn(2800);
+            		} else{
+              			$('#whoiam4').fadeOut(0);
+            		}
+            		if ($(this).scrollTop() > 500) {
+                		$('#whoiwas4').fadeIn(2800);
+            		} else{
+              			$('#whoiwas4').fadeOut(0);
+            		}
+            		if ($(this).scrollTop() > 800) {
+                		$('.project1').fadeIn(1000);
+            		} else{
+              			$('.project1').fadeOut(0);
+            		}
+            		if ($(this).scrollTop() > 800) {
+                		$('.project2').fadeIn(1600);
+            		} else{
+              			$('.project2').fadeOut(0);
+            		}
+            		if ($(this).scrollTop() > 800) {
+                		$('.project3').fadeIn(2200);
+            		} else{
+              			$('.project3').fadeOut(0);
+            		}
+            		if ($(this).scrollTop() > 800) {
+                		$('.project4').fadeIn(2800);
+            		} else{
+              			$('.project4').fadeOut(0);
+            		}
+            		if ($(this).scrollTop() > 800) {
+                		$('.project5').fadeIn(3400);
+            		} else{
+              			$('.project5').fadeOut(0);
+            		}
+            		if ($(this).scrollTop() > 800) {
+                		$('.project6').fadeIn(4000);
+            		} else{
+              			$('.project6').fadeOut(0);
+            		}
+            		if ($(this).scrollTop() > 1900) {
+                		$('.forte1').fadeIn(1000);
+            		} else{
+              			$('.forte1').fadeOut(0);
+            		}
+            		if ($(this).scrollTop() > 1900) {
+                		$('.forte2').fadeIn(1300);
+            		} else{
+              			$('.forte2').fadeOut(0);
+            		}
+            		if ($(this).scrollTop() > 1900) {
+                		$('.forte3').fadeIn(1600);
+            		} else{
+              			$('.forte3').fadeOut(0);
+            		}
+            		if ($(this).scrollTop() > 1900) {
+                		$('.forte4').fadeIn(1900);
+            		} else{
+              			$('.forte4').fadeOut(0);
+            		}
+            		if ($(this).scrollTop() > 1900) {
+                		$('.forte5').fadeIn(2200);
+            		} else{
+              			$('.forte5').fadeOut(0);
+            		}
+            		if ($(this).scrollTop() > 1900) {
+                		$('.forte6').fadeIn(2500);
+            		} else{
+              			$('.forte6 ').fadeOut(0);
+            		}
+		    	}
+		    });
+
 		    $('.nav-font').css("color","#cfcfcf");
 		    $('.yesbtn').css("background-color","#ffffff");
 		    $('.yestext').css("color","#ff3232");
@@ -194,6 +334,9 @@
 
 		});
 	</script>
+	<script>
+		
+	</script>
 	<!--scrolling down effect onn menus-->
 	<script type="text/javascript">
 		$(document).on('click', 'a[href^="#"]', function(e) {
@@ -215,10 +358,28 @@
 		    // animated top scrolling
 		    $('body, html').animate({scrollTop: pos},1000);
 		});
+		function navcontactclicked(){
+			$('html, body').animate({
+                     scrollTop: $(document).height()
+                 },
+                 1500);
+                 return false;
+		}
 	</script>
 	<title>Shivam Bhasin</title>
 </head>
 <body>
+
+	<div id="loading">
+  		<img id="loading-image" src="images/loading.gif" alt="Loading..." />
+	</div>
+
+ 	<script language="javascript" type="text/javascript">
+    	$(window).load(function() {
+    		$('#loading').hide();
+    		$('#shivamvkphoto').fadeIn(1000);
+  		});
+	</script>
 
 	<nav class="navbar navbar-expand-lg fixed-top" id="navbar" style="background-color: rgba(0,0,0,0);">
 		<div class="container">
@@ -248,7 +409,7 @@
 	      			<a href="#myfortescroll" class="nav-link js-scroll-trigger"><span class="nav-font"><b>Forte</b></span></a>
 	      		</li>
 	      		<li>
-	      			<a href="" class="nav-link"><span class="nav-font"><b>Contact</b></span></a>
+	      			<a onclick="navcontactclicked()" class="nav-link js-scroll-trigger"><span class="nav-font"><b>Contact</b></span></a>
 	      		</li>
 	      		<li class="nav-item">
 	        		<a href="https://shivamvk.wordpress.com/" class="nav-link js-scroll-trigger"><span class="nav-font"><b>Visit my Blog</b></span></a>
@@ -265,7 +426,7 @@
 	<div id="homescroll"></div>
 
 	<div class="text-center" id="home" style="position: absolute;top: 57%; left: 50%; transform: translate(-50%, -50%);">
-		<img src="images/shivam.jpg" class="myImage img img-thumbnail"><br>
+		<img id="shivamvkphoto" style="display: none;" src="images/shivam.jpg" class="myImage img img-thumbnail"><br>
 		<span style="font-family: 'Open Sans', sans-serif; font-weight: bold; font-size: 26px; color: #efefef">Shivam Bhasin</span><br>
 		<span style="font-family: 'Merriweather', serif; font-weight: bold; font-size: 20px; color: #efefef">Web & Android Developer</span><br><br>
 		<a href="#homescroll" class="btn btn-danger btn-lg findMore" style="color: #ffffff">&nbspKnow more&nbsp</a>
@@ -307,10 +468,10 @@
 					<hr style="width: 60px; height: 2px; background-color: #ff1919; border-color: #ff1919">
 				</div>
 				<div class="container">
-					<p><i class="fa fa-address-book" style="font-size: 24px"></i>&nbsp&nbspa Student at <a href="" class="whoiamlink">Jaypee Institute of Information Technology</a></p>
-					<p><img src="images/android.png" width="25px" height="27px">&nbsp&nbspan Android Developer Intern at <a href="" class="whoiamlink">DevCoders</a></p>
-					<p><img src="images/webdeveloper.png" width="25px" height="27px">&nbsp&nbspa Web Developer Intern at <a href="" class="whoiamlink">Snipped</a></p>
-					<p><i class="fa fa-check-square-o" style="font-size: 24px"></i>&nbsp&nbspa Volunteer at <a href="" class="whoiamlink">Light de Literacy</a></p>
+					<p id="whoiam1"><i class="fa fa-address-book" style="font-size: 24px"></i>&nbsp&nbspa Student at <a href="" class="whoiamlink">Jaypee Institute of Information Technology</a></p>
+					<p id="whoiam2"><img src="images/android.png" width="25px" height="27px">&nbsp&nbspan Android Developer Intern at <a href="" class="whoiamlink">DevCoders</a></p>
+					<p id="whoiam3"><img src="images/webdeveloper.png" width="25px" height="27px">&nbsp&nbspa Web Developer Intern at <a href="" class="whoiamlink">Snipped</a></p>
+					<p id="whoiam4"><i class="fa fa-check-square-o" style="font-size: 24px"></i>&nbsp&nbspa Volunteer at <a href="" class="whoiamlink">Light de Literacy</a></p>
 				</div>				
 			</div>
 
@@ -320,10 +481,10 @@
 					<hr style="width: 60px; height: 2px; background-color: #ff1919; border-color: #ff1919">
 				</div>
 				<div class="container">
-					<p><img src="images/android.png" width="25px" height="27px">&nbsp&nbspan Android Developer at <a href="" class="whoiamlink">ATG, Bangalore</a></p>
-					<p><img src="images/webdeveloper.png" width="25px" height="27px">&nbsp&nbspa Web Developer Intern at <a href="" class="whoiamlink">Light de Litercy</a></p>
-					<p><img src="images/webdeveloper.png" width="25px" height="27px">&nbsp&nbspa Web Developer Intern at <a href="" class="whoiamlink">HiddenRamp</a></p>
-					<p><i class="fa fa-check-square-o" style="font-size: 24px"></i>&nbsp&nbspa Campus Ambassador at <a href="" class="whoiamlink">What After College</a></p>
+					<p id="whoiwas1"><img src="images/android.png" width="25px" height="27px">&nbsp&nbspan Android Developer at <a href="" class="whoiamlink">ATG, Bangalore</a></p>
+					<p id="whoiwas2"><img src="images/webdeveloper.png" width="25px" height="27px">&nbsp&nbspa Web Developer Intern at <a href="" class="whoiamlink">Light de Litercy</a></p>
+					<p id="whoiwas3"><img src="images/webdeveloper.png" width="25px" height="27px">&nbsp&nbspa Web Developer Intern at <a href="" class="whoiamlink">HiddenRamp</a></p>
+					<p id="whoiwas4"><i class="fa fa-check-square-o" style="font-size: 24px"></i>&nbsp&nbspa Campus Ambassador at <a href="" class="whoiamlink">What After College</a></p>
 				</div>				
 			</div>
 
@@ -343,19 +504,19 @@
 	<div class="container text-center">
 
 		<div class="row">
-			<div class="view overlay col-lg-4 col-md-4 col-sm-4 col-xs-4" target="_blank" onclick="window.location.assign('https://github.com/shivamvk/MoviesIMDB')">
+			<div class="view overlay col-lg-4 col-md-4 col-sm-4 col-xs-4 project1" target="_blank" onclick="window.location.assign('https://github.com/shivamvk/MoviesIMDB')">
 			    <img src="images/MoviesIMDB.png" class="projectimage" alt="" style="width: 110%; height: 100%;">
 			    <div class="mask flex-center rgba-stylish-strong">
 			        <p class="white-text"><span class="projectheading">Movies IMDB</span><br><span class="projectdetail">A movies rating app</span><br><br><span class="clickdetail">Click for more details.</span></p>
 			    </div>
 			</div>
-			<div class="view overlay col-lg-4 col-md-4 col-sm-4 col-xs-4" target="_blank" onclick="window.location.assign('https://github.com/shivamvk/NewsApp')">
+			<div class="view overlay col-lg-4 col-md-4 col-sm-4 col-xs-4 project2" target="_blank" onclick="window.location.assign('https://github.com/shivamvk/NewsApp')">
 			    <img src="images/NewsApp.jpg" class="projectimage" alt="" style="width: 110%; height: 100%;">
 			    <div class="mask flex-center rgba-stylish-strong">
 			        <p class="white-text"><span class="projectheading">News App</span><br><span class="projectdetail">A news android app using RecyclerView.</span><br><br><span class="clickdetail">Click for more details.</span></p>
 			    </div>
 			</div>
-			<div class="view overlay col-lg-4 col-md-4 col-sm-4 col-xs-4">
+			<div class="view overlay col-lg-4 col-md-4 col-sm-4 col-xs-4 project3">
 			    <img src="images/JustForFun.jpg" class="projectimage" alt="" style="width: 110%; height: 100%;">
 			    <div class="mask flex-center rgba-stylish-strong">
 			        <p class="white-text"><span class="projectheading">FriendlyChat App</span><br><span class="projectdetail">A chat room app using firebase.</span><br><br><span class="clickdetail">Click for more details.</span></p>
@@ -366,19 +527,19 @@
 		<br>
 
 		<div class="row">
-			<div class="view overlay col-lg-4 col-md-4 col-sm-4 col-xs-4">
+			<div class="view overlay col-lg-4 col-md-4 col-sm-4 col-xs-4 project4">
 			    <img src="images/PetsCatalog.png" class="projectimage" alt="" style="width: 110%; height: 100%;">
 			    <div class="mask flex-center rgba-stylish-strong">
 			        <p class="white-text"><span class="projectheading">PetsCatalog App</span><br><span class="projectdetail">A Pets Catalog app using Content Providrs.</span><br><br><span class="clickdetail">Click for more details.</span></p>
 			    </div>
 			</div>
-			<div class="view overlay col-lg-4 col-md-4 col-sm-4 col-xs-4" onclick="window.location.assign('https://snipped-d4559.firebaseapp.com/')">
+			<div class="view overlay col-lg-4 col-md-4 col-sm-4 col-xs-4 project5" onclick="window.location.assign('https://snipped-d4559.firebaseapp.com/')">
 			    <img src="images/Snipped.png" class="projectimage" alt="" style="width: 110%; height: 100%;">
 			    <div class="mask flex-center rgba-stylish-strong">
 			        <p class="white-text"><span class="projectheading">Salon Booking App</span><br><span class="projectdetail">A web app that allows user to<br>select a beauty service and book a salon for it.</span><br><br><span class="clickdetail">Click for more details.</span></p>
 			    </div>
 			</div>
-			<div class="view overlay col-lg-4 col-md-4 col-sm-4 col-xs-4">
+			<div class="view overlay col-lg-4 col-md-4 col-sm-4 col-xs-4 project6">
 			    <img src="images/Plus.png" class="projectimage" alt="" style="width: 110%; height: 100%;">
 			    <div class="mask flex-center rgba-stylish-strong">
 			        <p class="white-text"><span class="projectheading">Other projects.</span><br><span class="projectdetail">Click to view more projects.</span><br><br><span class="clickdetail"></span></p>
@@ -421,8 +582,6 @@
 		</div>
 	</div>
 
-	<div id="myfortescroll"></div>
-
 	<br><br><br> 
 
 	<div class="text-center" id="myforte">
@@ -435,7 +594,7 @@
 	<div class="container text-center">
 		<div class="row">
 
-			<div class="col fortecol forteandroid">
+			<div class="col fortecol forte1">
 				<div
 				class="ldBar label-center"
 				data-value="70"
@@ -447,7 +606,7 @@
 
 			</div>
 
-			<div class="col fortecol forteandroid">
+			<div class="col fortecol forte2">
 				<div
 				class="ldBar label-center"
 				data-value="80"
@@ -459,7 +618,7 @@
 
 			</div>
 
-			<div class="col fortecol forteandroid">
+			<div class="col fortecol forte3">
 				<div
 				class="ldBar label-center"
 				data-value="90"
@@ -471,7 +630,7 @@
 
 			</div>
 
-			<div class="col fortecol forteandroid">
+			<div class="col fortecol forte4">
 				<div
 				class="ldBar label-center"
 				data-value="60"
@@ -483,7 +642,7 @@
 
 			</div>
 
-			<div class="col fortecol forteandroid">
+			<div class="col fortecol forte5">
 				<div
 				class="ldBar label-center"
 				data-value="40"
@@ -495,7 +654,7 @@
 
 			</div>
 
-			<div class="col fortecol forteandroid">
+			<div class="col fortecol forte6">
 				<div
 				class="ldBar label-center"
 				data-value="80"
@@ -508,11 +667,11 @@
 			</div>
 
 		</div>
-	</div>	            
-
-	<div id="contactscroll"></div>
+	</div>	           
 
 	<br><br><br> 
+
+	<div id="myfortescroll"></div>
 
 	<div style="background: #ff1919">
 
@@ -540,6 +699,8 @@
 		</div>
 
 	</div>
+
+	<div id="contactscroll"></div>
 
 	<div class="locationonmap" style="display: none;">
 		<img src="images/viewlocation.png" width="100%" height="40%">
