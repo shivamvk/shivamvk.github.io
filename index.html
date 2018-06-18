@@ -22,9 +22,18 @@
 		    x.classList.toggle("change");
 		}
 	</script>
+	<script src="https://cdn.jsdelivr.net/npm/typeit@5.10.1/dist/typeit.min.js" />
+	<script type="text/javascript">
+		
+	</script>
 	<script src="https://code.jquery.com/jquery-latest.js"></script>
 	<script>
 		$(document).ready(function(){
+			new TypeIt('#mydesctypeit', {
+			    strings: ['I am a Web Developer!', 'I am also an Android Developer!', "Wait! I am a Web and Android developer ^_^."],
+			    speed: 100,
+    			breakLines: false,
+			});
 
 		    var windowWidth = $(window).width();
 		    var windowHeight = $(window).height();
@@ -429,8 +438,8 @@
 
 	<div class="text-center" id="home" style="opacity:0 ;position: absolute;top: 57%; left: 50%; transform: translate(-50%, -50%);">
 		<img id="shivamvkphoto" src="images/shivam.jpg" class="myImage img img-thumbnail"><br>
-		<span style="font-family: 'Open Sans', sans-serif; font-weight: bold; font-size: 26px; color: #efefef">Shivam Bhasin</span><br>
-		<span style="font-family: 'Merriweather', serif; font-weight: bold; font-size: 20px; color: #efefef">Web & Android Developer</span><br><br>
+		<span style="font-family: 'Open Sans', sans-serif; font-weight: bold; font-size: 20px; color: #efefef">Shivam Bhasin</span><br>
+		<span style="font-family: 'Merriweather', serif; font-weight: bold; font-size: 26px; color: #efefef" id="mydesctypeit"></span><br><br>
 		<a href="#homescroll" class="btn btn-danger btn-lg findMore" style="color: #ffffff">&nbspKnow more&nbsp</a>
 	</div>
 
@@ -556,8 +565,8 @@
 	<div class="" style="background-color: #ff3232">
 		<br>
 		<div class="container text-center">
-			<h3 class="" style="color: #ffffff">Liked my work?</h3>
-			<a class="btn btn-md yesbtn"><span class="yestext" style="font-weight: bold">Want to work together on a project?</span></a>
+			<h3 class="" style="color: #ffffff">Want to work with me?</h3>
+			<a class="btn btn-md yesbtn"><span class="yestext" style="font-weight: bold">Let's do magic</span></a>
 		</div>
 		<br>
 		<div class="container" id="worktogetherform" style="color: #ffffff; display: none;">
@@ -596,81 +605,22 @@
 	<div id="myfortescroll"></div>
 
 	<div class="container text-center">
-		<div class="row">
 
-			<div class="col fortecol forte1">
-				<div
-				class="ldBar label-center"
-				data-value="70"
-				data-preset="circle"
-				data-stroke="red"
-				></div>
+		<img class="fortecol forte1" src="images/forteandroid.png" width="150px" height="170px" style="margin: 20px;">
 
-				<span>Android</span>	
+			
 
-			</div>
+				<img class="fortecol forte2" src="images/fortejava.png" width="150px" height="170px" style="margin: 20px;">
 
-			<div class="col fortecol forte2">
-				<div
-				class="ldBar label-center"
-				data-value="80"
-				data-preset="circle"
-				data-stroke="red"
-				></div>	
+				
+				<img class="fortecol forte3" src="images/fortehtmlcssjs.png" width="150px" height="170px" style="margin: 20px;">
 
-				<span>Java</span>
+				
+				<img class="fortecol forte4" src="images/fortejquery.gif" width="150px" height="170px" style="margin: 20px;">
 
-			</div>
+				<img class="fortecol forte5" src="images/fortepython.png" width="150px" height="170px" style="margin: 20px;">
 
-			<div class="col fortecol forte3">
-				<div
-				class="ldBar label-center"
-				data-value="90"
-				data-preset="circle"
-				data-stroke="red"
-				></div>	
 
-				<span>HTML & CSS</span>
-
-			</div>
-
-			<div class="col fortecol forte4">
-				<div
-				class="ldBar label-center"
-				data-value="60"
-				data-preset="circle"
-				data-stroke="red"
-				></div>	
-
-				<span>JavaScript</span>
-
-			</div>
-
-			<div class="col fortecol forte5">
-				<div
-				class="ldBar label-center"
-				data-value="40"
-				data-preset="circle"
-				data-stroke="red"
-				></div>
-
-				<span>Python</span>	
-
-			</div>
-
-			<div class="col fortecol forte6">
-				<div
-				class="ldBar label-center"
-				data-value="80"
-				data-preset="circle"
-				data-stroke="red"
-				></div>
-
-				<span>C & C++</span>	
-
-			</div>
-
-		</div>
 	</div>	           
 
 	<br><br><br> 
@@ -707,6 +657,7 @@
 	<div class="locationonmap" style="display: none;">
 		<img src="images/viewlocation.png" width="100%" height="40%">
 	</div>
+
 
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.slim.js"></script>
