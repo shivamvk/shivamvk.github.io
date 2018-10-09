@@ -1,32 +1,219 @@
+
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/mdb.css">
+	<link rel="stylesheet" type="text/css" href="css/mdb.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="loading-bar.css"/>
+	<script type="text/javascript" src="js/loading-bar.js"></script>
 	<!--hamburger effects-->
 	<script>
 		function myFunction(x) {
 		    x.classList.toggle("change");
 		}
 	</script>
+	<script src="https://cdn.jsdelivr.net/npm/typeit@5.10.1/dist/typeit.min.js" />
+	<script type="text/javascript">
+		
+	</script>
 	<script src="https://code.jquery.com/jquery-latest.js"></script>
 	<script>
 		$(document).ready(function(){
-
-			$('#Personalinfo').fadeIn(400);
-			$('#Professionalinfo').fadeOut(400);
-			$('#Technicalinfo').fadeOut(400);
+			
 
 		    var windowWidth = $(window).width();
 		    var windowHeight = $(window).height();
 
+
+    		$('#home').animate({opacity: '1'}, "slow");
+
+		    if(windowWidth > 1125){
+		    	$('.seewhoiam').fadeOut(0);
+		    	$('.seemywork').fadeOut(0);
+		    	$('#whoiam1').fadeOut(0);
+		    	$('#whoiam2').fadeOut(0);
+		    	$('#whoiam3').fadeOut(0);
+		    	$('#whoiam4').fadeOut(0);
+		    	$('#whoiwas1').fadeOut(0);
+		    	$('#whoiwas2').fadeOut(0);
+		    	$('#whoiwas3').fadeOut(0);
+		    	$('#whoiwas4').fadeOut(0);
+		    	$('.project1').fadeOut(0);
+		    	$('.project2').fadeOut(0);
+		    	$('.project3').fadeOut(0);
+		    	$('.project4').fadeOut(0);
+		    	$('.project5').fadeOut(0);
+		    	$('.project6').fadeOut(0);
+		    	$('.forte1').fadeOut(0);
+		    	$('.forte2').fadeOut(0);
+		    	$('.forte3').fadeOut(0);
+		    	$('.forte4').fadeOut(0);
+		    	$('.forte5').fadeOut(0);
+		    	$('.forte6').fadeOut(0);   	
+		    }
+
+		    $(window).scroll(function(){
+		    	if(windowWidth > 1125){
+		    		if ($(this).scrollTop() > 120) {
+                		$('.seewhoiam').fadeIn(1000);
+            		} else{
+              			$('.seewhoiam').fadeOut(0);
+            		}
+            		if ($(this).scrollTop() > 120) {
+                		$('.seemywork').fadeIn(1000);
+            		} else{
+              			$('.seemywork').fadeOut(0);
+            		}
+            		if ($(this).scrollTop() > 450) {
+                		$('#whoiam1').fadeIn(1000);
+            		} else{
+              			$('#whoiam1').fadeOut(0);
+            		}
+            		if ($(this).scrollTop() > 500) {
+                		$('#whoiwas1').fadeIn(1000);
+            		} else{
+              			$('#whoiwas1').fadeOut(0);
+            		}
+            		if ($(this).scrollTop() > 500) {
+                		$('#whoiam2').fadeIn(1600);
+            		} else{
+              			$('#whoiam2').fadeOut(0);
+            		}
+            		if ($(this).scrollTop() > 500) {
+                		$('#whoiwas2').fadeIn(1600);
+            		} else{
+              			$('#whoiwas2').fadeOut(0);
+            		}
+            		if ($(this).scrollTop() > 500) {
+                		$('#whoiam3').fadeIn(2200);
+            		} else{
+              			$('#whoiam3').fadeOut(0);
+            		}
+            		if ($(this).scrollTop() > 500) {
+                		$('#whoiwas3').fadeIn(2200);
+            		} else{
+              			$('#whoiwas3').fadeOut(0);
+            		}
+            		if ($(this).scrollTop() > 500) {
+                		$('#whoiam4').fadeIn(2800);
+            		} else{
+              			$('#whoiam4').fadeOut(0);
+            		}
+            		if ($(this).scrollTop() > 500) {
+                		$('#whoiwas4').fadeIn(2800);
+            		} else{
+              			$('#whoiwas4').fadeOut(0);
+            		}
+            		if ($(this).scrollTop() > 800) {
+                		$('.project1').fadeIn(1000);
+            		} else{
+              			$('.project1').fadeOut(0);
+            		}
+            		if ($(this).scrollTop() > 800) {
+                		$('.project2').fadeIn(1600);
+            		} else{
+              			$('.project2').fadeOut(0);
+            		}
+            		if ($(this).scrollTop() > 800) {
+                		$('.project3').fadeIn(2200);
+            		} else{
+              			$('.project3').fadeOut(0);
+            		}
+            		if ($(this).scrollTop() > 800) {
+                		$('.project4').fadeIn(2800);
+            		} else{
+              			$('.project4').fadeOut(0);
+            		}
+            		if ($(this).scrollTop() > 800) {
+                		$('.project5').fadeIn(3400);
+            		} else{
+              			$('.project5').fadeOut(0);
+            		}
+            		if ($(this).scrollTop() > 800) {
+                		$('.project6').fadeIn(4000);
+            		} else{
+              			$('.project6').fadeOut(0);
+            		}
+            		if ($(this).scrollTop() > 1900) {
+                		$('.forte1').fadeIn(1000);
+            		} else{
+              			$('.forte1').fadeOut(0);
+            		}
+            		if ($(this).scrollTop() > 1900) {
+                		$('.forte2').fadeIn(1300);
+            		} else{
+              			$('.forte2').fadeOut(0);
+            		}
+            		if ($(this).scrollTop() > 1900) {
+                		$('.forte3').fadeIn(1600);
+            		} else{
+              			$('.forte3').fadeOut(0);
+            		}
+            		if ($(this).scrollTop() > 1900) {
+                		$('.forte4').fadeIn(1900);
+            		} else{
+              			$('.forte4').fadeOut(0);
+            		}
+            		if ($(this).scrollTop() > 1900) {
+                		$('.forte5').fadeIn(2200);
+            		} else{
+              			$('.forte5').fadeOut(0);
+            		}
+            		if ($(this).scrollTop() > 1900) {
+                		$('.forte6').fadeIn(2500);
+            		} else{
+              			$('.forte6 ').fadeOut(0);
+            		}
+		    	}
+		    });
+
 		    $('.nav-font').css("color","#cfcfcf");
+		    $('.yesbtn').css("background-color","#ffffff");
+		    $('.yestext').css("color","#ff3232");
+		    $('.submitbtn').css("background-color","#ffffff");
+		    $('.submitbtntext').css("color","#ff3232");
+	  		$('.seewhoiam').css("background-color","#ffffff");
+		    $('.seewhoiamtext').css("color","#ff3232");
+		    $('.seemywork').css("background-color","#ffffff");
+		    $('.seemyworktext').css("color","#ff3232");
+		    $('.viewlocation').css("background-color","#ffffff");
+		    $('.viewlocationtext').css("color","#ff3232");
+		    $('.yesbtn').hover(
+		    	function(){
+		    		$(this).css("background-color","#ff3232");
+		    		$('.yestext').css("color","#ffffff");
+		    	},
+		    	function(){
+		    		$(this).css("background-color","#ffffff");
+		    		$('.yestext').css("color","#ff3232");
+		    	}
+		    );
+			$(".yesbtn").click(
+				function(){
+			        $("#worktogetherform").slideToggle("slow");
+			    }
+			);
+		    $('.submitbtn').hover(
+		    	function(){
+		    		$(this).css("background-color","#ff3232");
+		    		$('.submitbtntext').css("color","#ffffff");
+		    	},
+		    	function(){
+		    		$(this).css("background-color","#ffffff");
+		    		$('.submitbtntext').css("color","#ff3232");
+		    	}
+		    );
 	    	$('.nav-font').hover(
 	  			function(){
 	  				$(this).css("color","#ff3232");
@@ -44,6 +231,38 @@
 	  				$(this).css("color","#cfcfcf");
 	  			}
 	  		);
+	  		$('.whoiamlink').css("color","#000000");
+	  		$('.whoiamlink').hover(
+	  			function(){
+	  				$(this).css("color","#ff3232");
+	  			},
+	  			function(){
+	  				$(this).css("color","#000000");
+	  			}
+	  		);
+	  		$('.viewlocation').hover(
+		    	function(){
+		    		$(this).css("background-color","#ff3232");
+		    		$('.viewlocationtext').css("color","#ffffff");
+		    	},
+		    	function(){
+		    		$(this).css("background-color","#ffffff");
+		    		$('.viewlocationtext').css("color","#ff3232");
+		    	}
+		    );
+			$(".viewlocation").click(
+				function(){
+			        $(".locationonmap").slideToggle("slow");
+			    }
+			);
+			$('.viewlocation').click(
+				function () {
+                 $('html, body').animate({
+                     scrollTop: $(document).height()
+                 },
+                 1500);
+                 return false;
+             });
 
 		    if (windowWidth<992) {
 		    	$('#navbar').css("background-color","rgba(255,255,255,1)");
@@ -114,10 +333,18 @@
 	        	});
 			}
 
+			if (windowWidth<576) {
+				$('.projectimage').css("width","100%");
+				$('.projectimage').css("height","90%");
+			}
+
 
 		    $('#homebgimage').height(windowHeight);
 
 		});
+	</script>
+	<script>
+		
 	</script>
 	<!--scrolling down effect onn menus-->
 	<script type="text/javascript">
@@ -140,36 +367,118 @@
 		    // animated top scrolling
 		    $('body, html').animate({scrollTop: pos},1000);
 		});
-	</script>
-	<script type="text/javascript">
-		function personalclick(){
-			$('#Professionalinfo').fadeOut(400);
-			$('#Technicalinfo').fadeOut(400);
-			$('#Personalinfo').fadeIn(600);
-			$('#Personal').css("color","#ff1919");
-			$('#Professional').css("color","#000000");
-			$('#Technical').css("color","#000000");
-		}
-		function professionalclick(){
-			$('#Personalinfo').fadeOut(400);
-			$('#Technicalinfo').fadeOut(400);
-			$('#Professionalinfo').fadeIn(600);
-			$('#Personal').css("color","#000000");
-			$('#Professional').css("color","#ff1919");
-			$('#Technical').css("color","#000000");
-		}
-		function technicalclick(){
-			$('#Personalinfo').fadeOut(400);
-			$('#Professionalinfo').fadeOut(400);
-			$('#Technicalinfo').fadeIn(600);
-			$('#Personal').css("color","#000000");
-			$('#Professional').css("color","#000000");
-			$('#Technical').css("color","#ff1919");
+		function navcontactclicked(){
+			$('html, body').animate({
+                     scrollTop: $(document).height()
+                 },
+                 1500);
+                 return false;
 		}
 	</script>
 	<title>Shivam Bhasin</title>
 </head>
 <body>
+
+	<div id="loading">
+  		<img id="loading-image" src="images/loading.gif" alt="Loading..." />
+	</div>
+
+ 	<script language="javascript" type="text/javascript">
+    	$(window).load(function() {
+    		$('#loading').hide();
+    		new TypeIt('#mydesctypeit', {
+			    speed: 100,
+    			breakLines: false,
+			})
+			.type("Web")
+			.pause(500)
+			.type(" Developer")
+			.pause(1000)
+			.delete()
+			.pause(500)
+			.type("Android")
+			.pause(500)
+			.type(" Developer")
+			.pause(1000)
+			.delete()
+			.pause(500)
+			.type("Web & Android")
+			.pause(500)
+			.type(" Developer")
+			.pause(1000)
+			.delete()
+			.pause(500)
+			.type("Web")
+			.pause(500)
+			.type(" Developer")
+			.pause(1000)
+			.delete()
+			.pause(500)
+			.type("Android")
+			.pause(500)
+			.type(" Developer")
+			.pause(1000)
+			.delete()
+			.pause(500)
+			.type("Web & Android")
+			.pause(500)
+			.type(" Developer")
+			.pause(1000)
+			.delete()
+			.pause(500)
+			.type("Web")
+			.pause(500)
+			.type(" Developer")
+			.pause(1000)
+			.delete()
+			.pause(500)
+			.type("Android")
+			.pause(500)
+			.type(" Developer")
+			.pause(1000)
+			.delete()
+			.pause(500)
+			.type("Web & Android")
+			.pause(500)
+			.type(" Developer")
+			.pause(1000)
+			.delete()
+			.pause(500)
+			.type("Web")
+			.pause(500)
+			.type(" Developer")
+			.pause(1000)
+			.delete()
+			.pause(500)
+			.type("Android")
+			.pause(500)
+			.type(" Developer")
+			.pause(1000)
+			.delete()
+			.pause(500)
+			.type("Web & Android")
+			.pause(500)
+			.type(" Developer")
+			.pause(1000)
+			.delete()
+			.pause(500)
+			.type("Web")
+			.pause(500)
+			.type(" Developer")
+			.pause(1000)
+			.delete()
+			.pause(500)
+			.type("Android")
+			.pause(500)
+			.type(" Developer")
+			.pause(1000)
+			.delete()
+			.pause(500)
+			.type("Web & Android")
+			.pause(500)
+			.type(" Developer");
+  		});
+	</script>
 
 	<nav class="navbar navbar-expand-lg fixed-top" id="navbar" style="background-color: rgba(0,0,0,0);">
 		<div class="container">
@@ -183,20 +492,26 @@
   			</button>
 		  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 		  	<ul class="navbar-nav mr-auto"><!--mr-auto is placing the search option to the right-->
-	      
+	      		
 	    	</ul>
 		  	<ul class="navbar-nav justify-content-end">
 		  		<li class="nav-item">
-	        		<a href="" class="nav-link"><span class="nav-font"><b>Home</b></span></a>
+	        		<a href="#home" class="nav-link js-scroll-trigger"><span class="nav-font"><b>Home</b></span></a>
 	      		</li>
 	      		<li>
-	      			<a href="#about" class="nav-link js-scroll-trigger"><span class="nav-font"><b>About</b></span></a>
+	      			<a href="#homescroll" class="nav-link js-scroll-trigger"><span class="nav-font"><b>About</b></span></a>
 	      		</li>
 	      		<li>
-	      			<a href="" class="nav-link"><span class="nav-font"><b>Portfolio</b></span></a>
+	      			<a href="#portfolioscroll" class="nav-link js-scroll-trigger"><span class="nav-font"><b>Portfolio</b></span></a>
 	      		</li>
 	      		<li>
-	      			<a href="" class="nav-link"><span class="nav-font"><b>Contact</b></span></a>
+	      			<a href="#myfortescroll" class="nav-link js-scroll-trigger"><span class="nav-font"><b>Forte</b></span></a>
+	      		</li>
+	      		<li>
+	      			<a onclick="navcontactclicked()" class="nav-link js-scroll-trigger"><span class="nav-font"><b>Contact</b></span></a>
+	      		</li>
+	      		<li class="nav-item">
+	        		<a href="https://shivamvk.wordpress.com/" class="nav-link js-scroll-trigger"><span class="nav-font"><b>Visit my Blog</b></span></a>
 	      		</li>
 		  	</ul>
 		  </div>
@@ -207,31 +522,230 @@
 		<img src="images/homebggrad2.gif" id="homebgimage" style="width: 100%; background: linear-gradient(rgba(255,255,255,0.4), rgba(0,0,0,0.4));">
 	</div>
 
-	<div class="text-center" style="position: absolute;top: 57%; left: 50%; transform: translate(-50%, -50%);">
-		<img src="images/shivam.jpg" class="myImage img img-thumbnail"><br>
-		<span style="font-family: 'Open Sans', sans-serif; font-weight: bold; font-size: 26px; color: #efefef">Shivam Bhasin</span><br>
-		<span style="font-family: 'Merriweather', serif; font-weight: bold; font-size: 20px; color: #efefef">Web & Android Developer</span><br><br>
-		<a href="#about" class="btn btn-danger btn-lg findMore" style="color: #ffffff">&nbspKnow more&nbsp</a>
+	<div id="homescroll"></div>
+
+	<div class="text-center" id="home" style="opacity:0 ;position: absolute;top: 57%; left: 50%; transform: translate(-50%, -50%);">
+		<img id="shivamvkphoto" src="images/shivam.jpg" class="myImage img img-thumbnail"><br>
+		<span style="font-family: 'Open Sans', sans-serif; font-weight: bold; font-size: 20px; color: #efefef">Shivam Bhasin</span><br>
+		<span style="font-family: 'Merriweather', serif; font-weight: bold; font-size: 26px; color: #efefef" id="mydesctypeit"></span><br><br>
+		<a href="Shivambhasin.pdf" class="btn btn-danger btn-lg findMore" style="color: #ffffff">&nbspDownload resume&nbsp</a>
 	</div>
 
 	<br><br>
 
-	<div class="About container text-center" id="about">
-		<span style="font-family: 'Merriweather', serif; font-size: 32px">About me</span>
+	<div id="aboutscroll"></div>
+
+	<div style="background-color: #ff3232">
+		<div class="About container text-center" id="about">
+			<br><br>
+			<span style="font-family: 'Merriweather', serif; font-size: 32px; color: #ffffff">Do you want to...</span>
+			<hr style="width: 60px; height: 2px; background-color: #ffffff; border-color: #ffffff">
+			<br><br>
+			<div class="row">
+				<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+					<a href="#whoiamscroll" class="btn js-scroll-trigger seewhoiam"><span class="seewhoiamtext" style="font-weight: bold;">See who I am?</span></a>
+				</div>
+				<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+					<a href="#portfolioscroll" class="btn js-scroll-trigger seemywork"><span class="seemyworktext" style="font-weight: bold;">See my work?</span></a>
+				</div>
+			</div>
+		</div>
+		<br><br><br>
+	</div>
+
+	<div id="whoiamscroll"></div>
+
+	<br><br><br><br>
+
+	<div class="container">
+
+		<div class="row">
+
+			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+				<div class="text-center" id="whoiam">
+					<span style="font-family: 'Merriweather', serif; font-size: 32px; text-align: center;">I am...</span>
+					<hr style="width: 60px; height: 2px; background-color: #ff1919; border-color: #ff1919">
+				</div>
+				<div class="container">
+					<p id="whoiam1"><i class="fa fa-address-book" style="font-size: 24px"></i>&nbsp&nbspa Student at <a href="" class="whoiamlink">Jaypee Institute of Information Technology</a></p>
+					<p id="whoiam2"><img src="images/android.png" width="25px" height="27px">&nbsp&nbspan Android Developer Intern at <a href="" class="whoiamlink">Mindful Machine</a></p>
+					<p id="whoiam3"><img src="images/webdeveloper.png" width="25px" height="27px">&nbsp&nbspa Web Developer Intern at <a href="" class="whoiamlink">Snipped</a></p>
+					<p id="whoiam4"><i class="fa fa-check-square-o" style="font-size: 24px"></i>&nbsp&nbspa Technical Coordinator at <a href="" class="whoiamlink">Devloper student club, Jiit, Noida</a></p>
+				</div>				
+			</div>
+
+			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+				<div class="text-center" id="whoiam">
+					<span style="font-family: 'Merriweather', serif; font-size: 32px; text-align: center;">I was...</span>
+					<hr style="width: 60px; height: 2px; background-color: #ff1919; border-color: #ff1919">
+				</div>
+				<div class="container">
+					<p id="whoiwas1"><img src="images/android.png" width="25px" height="27px">&nbsp&nbspan Android Developer at <a href="" class="whoiamlink">ATG, Bangalore</a></p>
+					<p id="whoiwas2"><img src="images/webdeveloper.png" width="25px" height="27px">&nbsp&nbspa Web Developer Intern at <a href="" class="whoiamlink">Light de Litercy</a></p>
+					<p id="whoiwas3"><img src="images/webdeveloper.png" width="25px" height="27px">&nbsp&nbspa Web Developer Intern at <a href="" class="whoiamlink">HiddenRamp</a></p>
+					<p id="whoiwas4"><i class="fa fa-check-square-o" style="font-size: 24px"></i>&nbsp&nbspa Campus Ambassador at <a href="" class="whoiamlink">What After College</a></p>
+				</div>				
+			</div>
+
+		</div>
+
+	</div>
+
+	<div id="portfolioscroll"></div>
+
+	<br><br><br><br>
+
+	<div class="text-center" id="portfolio">
+		<span style="font-family: 'Merriweather', serif; font-size: 32px; text-align: center;">Portfolio</span>
 		<hr style="width: 60px; height: 2px; background-color: #ff1919; border-color: #ff1919">
-		<span id="Personal" onclick="personalclick()" onmouseover="personalclick()" style="color: #ff1919">Personal&nbsp</span><i class="fa fa-circle" style="font-size:16px"></i>
-		<span id="Professional" onclick="professionalclick()" onmouseover="professionalclick()" style="color: #000000">Professional&nbsp</span><i class="fa fa-circle" style="font-size:16px"></i>
-		<span id="Technical" onclick="technicalclick()" onmouseover="technicalclick()" style="color: #000000">Technical</span>
-		<div id="Personalinfo">
-			<h1>Personal</h1>
+	</div>
+
+	<div class="container text-center">
+
+		<div class="row">			
+			<div class="view overlay col-lg-4 col-md-4 col-sm-4 col-xs-4 project1" target="_blank" onclick="window.location.assign('https://github.com/shivamvk/Facebook')">
+			    <img src="images/facebookproject.png" class="projectimage" alt="" style="width: 110%; height: 100%;">
+			    <div class="mask flex-center rgba-stylish-strong">
+			        <p class="white-text"><span class="projectheading">Facebook</span><br><span class="projectdetail">A social networking web application<br>made on java.</span><br><br><span class="clickdetail">Click for more details.</span></p>
+			    </div>
+			</div>
+			<div class="view overlay col-lg-4 col-md-4 col-sm-4 col-xs-4 project2" target="_blank" onclick="window.location.assign('https://github.com/shivamvk/MoviesIMDB')">
+			    <img src="images/MoviesIMDB.png" class="projectimage" alt="" style="width: 110%; height: 100%;">
+			    <div class="mask flex-center rgba-stylish-strong">
+			        <p class="white-text"><span class="projectheading">Movies IMDB</span><br><span class="projectdetail">A movies rating app</span><br><br><span class="clickdetail">Click for more details.</span></p>
+			    </div>
+			</div>
+			<div class="view overlay col-lg-4 col-md-4 col-sm-4 col-xs-4 project3" onclick="window.location.assign('https://github.com/shivamvk/FriendlyChat')">
+			    <img src="images/JustForFun.jpg" class="projectimage" alt="" style="width: 110%; height: 100%;">
+			    <div class="mask flex-center rgba-stylish-strong">
+			        <p class="white-text"><span class="projectheading">FriendlyChat App</span><br><span class="projectdetail">A chat room app using firebase.</span><br><br><span class="clickdetail">Click for more details.</span></p>
+			    </div>
+			</div>
 		</div>
-		<div id="Professionalinfo">
-			<h1>Professional</h1>
+
+		<br>
+
+		<div class="row">
+			<div class="view overlay col-lg-4 col-md-4 col-sm-4 col-xs-4 project4" onclick="window.location.assign('https://github.com/shivamvk/NewsApp')">
+				<img src="images/NewsApp.jpg" class="projectimage" alt="" style="width: 110%; height: 100%;">
+			    <div class="mask flex-center rgba-stylish-strong">
+			        <p class="white-text"><span class="projectheading">News App</span><br><span class="projectdetail">A news android app using RecyclerView.</span><br><br><span class="clickdetail">Click for more details.</span></p>
+			    </div>
+			</div>
+			<div class="view overlay col-lg-4 col-md-4 col-sm-4 col-xs-4 project5" onclick="window.location.assign('https://snipped-d4559.firebaseapp.com/')">
+			    <img src="images/Snipped.png" class="projectimage" alt="" style="width: 110%; height: 100%;">
+			    <div class="mask flex-center rgba-stylish-strong">
+			        <p class="white-text"><span class="projectheading">Salon Booking App</span><br><span class="projectdetail">A web app that allows user to<br>select a beauty service and book a salon for it.</span><br><br><span class="clickdetail">Click for more details.</span></p>
+			    </div>
+			</div>
+			<div class="view overlay col-lg-4 col-md-4 col-sm-4 col-xs-4 project6" onclick="window.location.assign('https://www.github.com/shivamvk')">
+			    <img src="images/Plus.png" class="projectimage" alt="" style="width: 110%; height: 100%;">
+			    <div class="mask flex-center rgba-stylish-strong">
+			        <p class="white-text"><span class="projectheading">Other projects.</span><br><span class="projectdetail">Click to view more projects.</span><br><br><span class="clickdetail"></span></p>
+			    </div>
+			</div>
 		</div>
-		<div id="Technicalinfo">
-			<h1>Technical</h1>
+		
+	</div>
+
+	<br><br><br>
+
+	<div class="" style="background-color: #ff3232">
+		<br>
+		<div class="container text-center">
+			<h3 class="" style="color: #ffffff">Want to work with me?</h3>
+			<a class="btn btn-md yesbtn"><span class="yestext" style="font-weight: bold">Let's do magic</span></a>
+		</div>
+		<br>
+		<div class="container" id="worktogetherform" style="color: #ffffff; display: none;">
+			<form action="https://formspree.io/shivam.vk529@gmail.com" method="post">
+			  <div class="form-group">
+			    <label for="projectname">Project name:</label>
+			    <input type="text" class="form-control" name="Project Name" placeholder="Name your project" id="projectname" required="">
+			  </div>
+			  <div class="form-group">
+			    <label for="projectdescription">Project description:</label>
+			    <input type="text" class="form-control" name="Project Description" placeholder="Describe your project in a line or two" id="projectdescription" required="">
+			  </div>
+			  <div class="form-group">
+			  	<label for="email">Your email:</label>
+			  	<input type="email" class="form-control" name="Email id" placeholder="Your contact email" id="email" required="">
+			  </div>
+			  <div class="form-group">
+			  	<label for="githublink">Github link:</label>
+			  	<input type="link" class="form-control" name="Github Link" placeholder="Your project's link (leave it empty if your project is not yet on github)" id="githublink">
+			  </div>
+			  <button type="submit" class="btn btn-md submitbtn"><span style="font-weight: bold;" class="submitbtntext">Submit</span></button>
+			</form>
+			<br>
 		</div>
 	</div>
+
+	<br><br><br> 
+
+	<div class="text-center" id="myforte">
+		<span style="font-family: 'Merriweather', serif; font-size: 32px; text-align: center;">My Forte</span>
+		<hr style="width: 60px; height: 2px; background-color: #ff1919; border-color: #ff1919">
+	</div>           
+
+	<br><br>
+
+	<div id="myfortescroll"></div>
+
+	<div class="container text-center">
+
+		<img class="fortecol forte1" src="images/forteandroid.png" width="150px" height="170px" style="margin: 20px;">
+
+			
+
+				<img class="fortecol forte2" src="images/fortejava.png" width="150px" height="170px" style="margin: 20px;">
+
+				
+				<img class="fortecol forte3" src="images/fortehtmlcssjs.png" width="150px" height="170px" style="margin: 20px;">
+
+				
+				<img class="fortecol forte4" src="images/fortejquery.gif" width="150px" height="170px" style="margin: 20px;">
+
+				<img class="fortecol forte5" src="images/fortepython.png" width="150px" height="170px" style="margin: 20px;">
+
+
+	</div>	           
+
+	<br><br><br> 
+
+	<div style="background: #ff1919">
+
+		<div class="text-center" id="contact">
+			<br><br>
+			<span style="font-family: 'Merriweather', serif; font-size: 32px; text-align: center; color: #000000">Contact</span>
+			<hr style="width: 60px; height: 2px; background-color: #000000; border-color: #000000">
+			<br><br>
+		</div>
+
+		<div class="text-center">
+			<div class="container">
+				<h1 style="font-family: 'Merriweather', serif; text-align: center; color: #ffffff"><p>Shivam Bhasin</p></h1>
+				<p><a href="tel:8130583124"><i class="fa fa-phone" style="font-size: 24px; color: #ffffff">&nbsp&nbsp8130583124</i></a>&nbsp&nbsp &nbsp<i class="fa fa-whatsapp" style="font-size: 24px; color: #ffffff">&nbsp&nbsp9639241605</i></p>
+				<p><a href="mailto:shivamvk529@gmail.com"><i class="fa fa-envelope" style="font-size: 24px; color: #ffffff">&nbsp&nbspshivam.vk529@gmail.com</i></a></p>
+				<p><a class="btn btn-md viewlocation"><span class="viewlocationtext" style="font-weight: bold;">View Location</span></a></p>
+				<a href="https://www.facebook.com/shivambhasin29"><i class="fa fa-facebook-square" style="font-size: 24px; color: #ffffff"></i></a>&nbsp&nbsp
+				<a href="https://github.com/shivamvk"><i class="fa fa-github" style="font-size: 24px; color: #ffffff"></i></a>&nbsp&nbsp
+				<a href="https://plus.google.com/106784302031019395559"><i class="fa fa-google-plus-square" style="font-size: 24px; color: #ffffff"></i></a>&nbsp&nbsp
+				<a href="https://www.linkedin.com/in/shivam-bhasin-69a588158/"><i class="fa fa-linkedin-square" style="font-size: 24px; color: #ffffff"></i></a>&nbsp&nbsp
+				<a href="https://stackoverflow.com/users/8748038/shivam-bhasin"><i class="fa fa-stack-overflow" style="font-size: 24px; color: #ffffff"></i></a>&nbsp&nbsp
+				<a href="https://twitter.com/Shivam_vk5"><i class="fa fa-twitter-square" style="font-size: 24px; color: #ffffff"></i></a>
+			</div>
+			<br>
+		</div>
+
+	</div>
+
+	<div id="contactscroll"></div>
+
+	<div class="locationonmap" style="display: none;">
+		<img src="images/viewlocation.png" width="100%" height="40%">
+	</div>
+
 
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.slim.js"></script>

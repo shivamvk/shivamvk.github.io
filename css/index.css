@@ -58,9 +58,135 @@
     transform: rotate(-45deg) translate(-9px, 6px);
 }
 
-.change .bar2 {opacity: 0;}
+.change .bar2 {
+	opacity: 0;
+}
 
 .change .bar3 {
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
 }
+
+#myProgress {
+    width: 100%;
+    background-color: grey;
+}
+#myBar {
+    width: 1%;
+    height: 30px;
+    background-color: #e50000;
+}
+
+.pic { 
+	margin: 0px;
+    padding: 0px;
+    position: relative;
+    display: block;
+    box-sizing: border-box;   
+}
+
+.projectheading{
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.projectdetail{
+	font-size: 16px;
+}
+
+
+.ldBar{
+	width: 70%;
+	height: 70%;
+	margin: auto;
+}
+.ldBar-label {
+  display: none;
+}
+
+@media only screen and (max-width: 576px){
+	.ldBar{
+		width: 10px;
+		height: 10px;
+		margin: auto;
+		align-self: center;
+	}
+}
+
+#loading {
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   position: fixed;
+   display: block;
+   opacity: 0.7;
+   background-color: #fff;
+   z-index: 99;
+   text-align: center;
+}
+
+#loading-image {
+  position: absolute;
+  top: 40%;
+  left: 43%;
+  z-index: 100;
+  width: 180px;
+  height: 150px;
+}
+
+@media only screen and (max-width: 877px){
+	#loading-image {
+  		position: absolute;
+  		top: 40%;
+  		left: 40%;
+  		z-index: 100;
+  		width: 180px;
+  		height: 150px;
+	}
+}
+
+@media only screen and (max-width: 680px){
+	#loading-image {
+  		position: absolute;
+  		top: 40%;
+  		left: 40%;
+  		z-index: 100;
+  		width: 160px;
+  		height: 130px;
+	}
+}
+
+@media only screen and (max-width: 535px){
+	#loading-image {
+  		position: absolute;
+  		top: 40%;
+  		left: 37%;
+  		z-index: 100;
+  		width: 160px;
+  		height: 130px;
+	}
+}
+
+@media only screen and (max-width: 435px){
+	#loading-image {
+  		position: absolute;
+  		top: 40%;
+  		left: 35%;
+  		z-index: 100;
+  		width: 160px;
+  		height: 130px;
+	}
+}
+
+@media only screen and (max-width: 400px){
+	#loading-image {
+  		position: absolute;
+  		top: 40%;
+  		left: 30%;
+  		z-index: 100;
+  		width: 160px;
+  		height: 130px;
+	}
+}
+
