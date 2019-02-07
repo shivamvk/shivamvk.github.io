@@ -25,12 +25,12 @@
 	</script>
 	<script src="https://cdn.jsdelivr.net/npm/typeit@5.10.1/dist/typeit.min.js" />
 	<script type="text/javascript">
-		
+
 	</script>
 	<script src="https://code.jquery.com/jquery-latest.js"></script>
 	<script>
 		$(document).ready(function(){
-			
+
 
 		    var windowWidth = $(window).width();
 		    var windowHeight = $(window).height();
@@ -60,7 +60,9 @@
 		    	$('.forte3').fadeOut(0);
 		    	$('.forte4').fadeOut(0);
 		    	$('.forte5').fadeOut(0);
-		    	$('.forte6').fadeOut(0);   	
+		    	$('.forte6').fadeOut(0);
+					$('.forte7').fadeOut(0);
+					$('.forte8').fadeOut(0);
 		    }
 
 		    $(window).scroll(function(){
@@ -174,6 +176,16 @@
                 		$('.forte6').fadeIn(2500);
             		} else{
               			$('.forte6 ').fadeOut(0);
+            		}
+								if ($(this).scrollTop() > 1900) {
+                		$('.forte7').fadeIn(2800);
+            		} else{
+              			$('.forte7 ').fadeOut(0);
+            		}
+								if ($(this).scrollTop() > 1900) {
+                		$('.forte8').fadeIn(3100);
+            		} else{
+              			$('.forte8 ').fadeOut(0);
             		}
 		    	}
 		    });
@@ -307,7 +319,7 @@
 				  			function(){
 				  				$(this).css("color","#000000");
 				  			}
-				  		);    	
+				  		);
 	            	}
 	            	else {
 	            		$('#navbar').css("background-color","rgba(0,0,0,0)");
@@ -328,8 +340,8 @@
 				  			function(){
 				  				$(this).css("color","#cfcfcf");
 				  			}
-				  		); 
-	            	} 
+				  		);
+	            	}
 	        	});
 			}
 
@@ -344,7 +356,7 @@
 		});
 	</script>
 	<script>
-		
+
 	</script>
 	<!--scrolling down effect onn menus-->
 	<script type="text/javascript">
@@ -492,7 +504,7 @@
   			</button>
 		  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 		  	<ul class="navbar-nav mr-auto"><!--mr-auto is placing the search option to the right-->
-	      		
+
 	    	</ul>
 		  	<ul class="navbar-nav justify-content-end">
 		  		<li class="nav-item">
@@ -567,11 +579,10 @@
 					<hr style="width: 60px; height: 2px; background-color: #ff1919; border-color: #ff1919">
 				</div>
 				<div class="container">
-					<p id="whoiam1"><i class="fa fa-address-book" style="font-size: 24px"></i>&nbsp&nbspa Student at <a href="" class="whoiamlink">Jaypee Institute of Information Technology</a></p>
-					<p id="whoiam3"><i class="fa fa-check-square-o" style="font-size: 24px"></i>&nbsp&nbspGoogle Code in Mentor at <a href="" class="whoiamlink">Jboss Outreach</a></p>
-					<p id="whoiam2"><img src="images/android.png" width="25px" height="27px">&nbsp&nbspan Android Developer Intern at <a href="" class="whoiamlink">Mindful Machine</a></p>
-					<p id="whoiam4"><i class="fa fa-check-square-o" style="font-size: 24px"></i>&nbsp&nbspa Technical Coordinator at <a href="" class="whoiamlink">Devloper student club, Jiit, Noida</a></p>
-				</div>				
+					<p id="whoiam1"><i class="fa fa-address-book" style="font-size: 24px"></i>&nbsp&nbsp Student at <a href="https://www.facebook.com/jiitofficial/" class="whoiamlink">Jaypee Institute of Information Technology</a></p>
+					<p id="whoiam2"><i class="fa fa-check-square-o" style="font-size: 24px"></i>&nbsp&nbsp Technical Coordinator at <a href="https://www.facebook.com/dscjiitnoida/" class="whoiamlink">Devloper student club, Jiit, Noida</a></p>
+					<p id="whoiam3"><i class="fa fa-check-square-o" style="font-size: 24px"></i>&nbsp&nbsp Director Technical at <a href="https://play.google.com/store/apps/details?id=in.mobileapp.snipped" class="whoiamlink">Snipped - A salon booking app</a></p>
+				</div>
 			</div>
 
 			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
@@ -580,11 +591,11 @@
 					<hr style="width: 60px; height: 2px; background-color: #ff1919; border-color: #ff1919">
 				</div>
 				<div class="container">
-					<p id="whoiwas1"><img src="images/android.png" width="25px" height="27px">&nbsp&nbspan Android Developer at <a href="" class="whoiamlink">ATG, Bangalore</a></p>
-					<p id="whoiwas2"><img src="images/webdeveloper.png" width="25px" height="27px">&nbsp&nbspa Web Developer Intern at <a href="" class="whoiamlink">Snipped</a></p>
-					<p id="whoiwas3"><img src="images/webdeveloper.png" width="25px" height="27px">&nbsp&nbspa Web Developer Intern at <a href="" class="whoiamlink">HiddenRamp</a></p>
-					<p id="whoiwas4"><i class="fa fa-check-square-o" style="font-size: 24px"></i>&nbsp&nbspa Campus Ambassador at <a href="" class="whoiamlink">What After College</a></p>
-				</div>				
+					<p id="whoiwas1"><i class="fa fa-check-square-o" style="font-size: 24px"></i>&nbsp&nbspGoogle Code in Mentor at <a href="https://github.com/JBossOutreach" class="whoiamlink">JBoss Outreach</a></p>
+					<p id="whoiwas2"><img src="images/android.png" width="25px" height="27px">&nbsp&nbspan Android Developer Intern at <a href="" class="whoiamlink">Mindful Machine</a></p>
+					<p id="whoiwas3"><img src="images/android.png" width="25px" height="27px">&nbsp&nbspan Android Developer at <a href="" class="whoiamlink">ATG, Bangalore</a></p>
+					<p id="whoiwas4"><img src="images/webdeveloper.png" width="25px" height="27px">&nbsp&nbspa Web Developer Intern at <a href="" class="whoiamlink">HiddenRamp</a></p>
+				</div>
 			</div>
 
 		</div>
@@ -602,11 +613,17 @@
 
 	<div class="container text-center">
 
-		<div class="row">			
-			<div class="view overlay col-lg-4 col-md-4 col-sm-4 col-xs-4 project1" target="_blank" onclick="window.location.assign('https://github.com/shivamvk/Facebook')">
-			    <img src="images/facebookproject.png" class="projectimage" alt="" style="width: 110%; height: 100%;">
+		<div class="row">
+			<div class="view overlay col-lg-4 col-md-4 col-sm-4 col-xs-4 project1" target="_blank" onclick="window.location.assign('https://play.google.com/store/apps/details?id=in.mobileapp.snipped')">
+			    <img src="images/snipped.png" class="projectimage" alt="" style="width: 110%; height: 100%;">
 			    <div class="mask flex-center rgba-stylish-strong">
-			        <p class="white-text"><span class="projectheading">Facebook</span><br><span class="projectdetail">A social networking web application<br>made on java.</span><br><br><span class="clickdetail">Click for more details.</span></p>
+			        <p class="white-text"><span class="projectheading">Snipped</span><br><span class="projectdetail">A Salon booking app<br>made on Flutter.</span><br><br><span class="clickdetail">Click for more details.</span></p>
+			    </div>
+			</div>
+			<div class="view overlay col-lg-4 col-md-4 col-sm-4 col-xs-4 project2" target="_blank" onclick="window.location.assign('https://github.com/shivamvk/MoviesIMDB')">
+			    <img src="images/graphql.png" class="projectimage" alt="" style="width: 110%; height: 100%;">
+			    <div class="mask flex-center rgba-stylish-strong">
+			        <p class="white-text"><span class="projectheading">Movies IMDB</span><br><span class="projectdetail">Production Ready API using</span><br>GraphQL in Node.js<br><span class="clickdetail">Click for more details.</span></p>
 			    </div>
 			</div>
 			<div class="view overlay col-lg-4 col-md-4 col-sm-4 col-xs-4 project2" target="_blank" onclick="window.location.assign('https://github.com/shivamvk/MoviesIMDB')">
@@ -615,21 +632,15 @@
 			        <p class="white-text"><span class="projectheading">Movies IMDB</span><br><span class="projectdetail">A movies rating app</span><br><br><span class="clickdetail">Click for more details.</span></p>
 			    </div>
 			</div>
-			<div class="view overlay col-lg-4 col-md-4 col-sm-4 col-xs-4 project3" onclick="window.location.assign('https://github.com/shivamvk/FriendlyChat')">
-			    <img src="images/JustForFun.jpg" class="projectimage" alt="" style="width: 110%; height: 100%;">
-			    <div class="mask flex-center rgba-stylish-strong">
-			        <p class="white-text"><span class="projectheading">FriendlyChat App</span><br><span class="projectdetail">A chat room app using firebase.</span><br><br><span class="clickdetail">Click for more details.</span></p>
-			    </div>
-			</div>
 		</div>
 
 		<br>
 
 		<div class="row">
-			<div class="view overlay col-lg-4 col-md-4 col-sm-4 col-xs-4 project4" onclick="window.location.assign('https://github.com/shivamvk/NewsApp')">
-				<img src="images/NewsApp.jpg" class="projectimage" alt="" style="width: 110%; height: 100%;">
+			<div class="view overlay col-lg-4 col-md-4 col-sm-4 col-xs-4 project1" target="_blank" onclick="window.location.assign('https://github.com/shivamvk/Facebook')">
+			    <img src="images/facebookproject.png" class="projectimage" alt="" style="width: 110%; height: 100%;">
 			    <div class="mask flex-center rgba-stylish-strong">
-			        <p class="white-text"><span class="projectheading">News App</span><br><span class="projectdetail">A news android app using RecyclerView.</span><br><br><span class="clickdetail">Click for more details.</span></p>
+			        <p class="white-text"><span class="projectheading">Facebook</span><br><span class="projectdetail">A social networking web application<br>made on java.</span><br><br><span class="clickdetail">Click for more details.</span></p>
 			    </div>
 			</div>
 			<div class="view overlay col-lg-4 col-md-4 col-sm-4 col-xs-4 project5" onclick="window.location.assign('https://snipped-d4559.firebaseapp.com/')">
@@ -645,7 +656,7 @@
 			    </div>
 			</div>
 		</div>
-		
+
 	</div>
 
 	<br><br><br>
@@ -681,12 +692,12 @@
 		</div>
 	</div>
 
-	<br><br><br> 
+	<br><br><br>
 
 	<div class="text-center" id="myforte">
 		<span style="font-family: 'Merriweather', serif; font-size: 32px; text-align: center;">My Forte</span>
 		<hr style="width: 60px; height: 2px; background-color: #ff1919; border-color: #ff1919">
-	</div>           
+	</div>
 
 	<br><br>
 
@@ -694,24 +705,30 @@
 
 	<div class="container text-center">
 
-		<img class="fortecol forte1" src="images/forteandroid.png" width="150px" height="170px" style="margin: 20px;">
-
-			
-
-				<img class="fortecol forte2" src="images/fortejava.png" width="150px" height="170px" style="margin: 20px;">
-
-				
-				<img class="fortecol forte3" src="images/fortehtmlcssjs.png" width="150px" height="170px" style="margin: 20px;">
-
-				
-				<img class="fortecol forte4" src="images/fortejquery.gif" width="150px" height="170px" style="margin: 20px;">
-
-				<img class="fortecol forte5" src="images/fortepython.png" width="150px" height="170px" style="margin: 20px;">
+		<img class="fortecol forte1" src="images/forteandroid.png" width="170px" height="170px" style="margin: 20px;">
 
 
-	</div>	           
 
-	<br><br><br> 
+				<img class="fortecol forte2" src="images/fortejava.jpg" width="200px" height="170px" style="margin: 20px;">
+
+
+				<img class="fortecol forte3" src="images/forteflutter.png" width="250px" height="170px" style="margin: 20px;">
+<br>
+
+				<img class="fortecol forte4" src="images/fortegraphql.png" width="250px" height="170px" style="margin: 20px;">
+
+				<img class="fortecol forte5" src="images/fortenode.png" width="250px" height="100px" style="margin: 20px;">
+
+				<img class="fortecol forte6" src="images/fortespring.png" width="250px" height="150px" style="margin: 20px;">
+
+<br>
+<img class="fortecol forte7" src="images/forteaws.png" width="250px" height="150px" style="margin: 20px;">
+<img class="fortecol forte8" src="images/fortefirebase.png" width="250px" height="150px" style="margin: 20px;">
+
+
+	</div>
+
+	<br><br><br>
 
 	<div style="background: #ff1919">
 
