@@ -1,0 +1,220 @@
+body{
+    background-image: url('assets/images/main_bg.jpg');
+    background-repeat: no-repeat;
+}
+
+.nav-bg-gradient{
+    background-image: linear-gradient(to right, #d5d1d3, #eeeeee, #ffffff, #ffffff, #ffffff, #f5f5f5, #eeeeee, #eeeeee, #e6e6e6, #dfdfdf, #d8d8d8);
+}
+
+li.navbar-brand{
+    margin-right: 24px;
+    width: 259px;
+    height: 63px;
+    margin-bottom: 16px;
+}
+
+li.nav-item{
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-top: 2%;
+}
+
+.right_border{
+    border-right: 1px #d1d3d5 solid;
+}
+
+@media screen and (max-width: 991px){
+    li.navbar-brand{
+        margin-right: 20px;
+    }
+
+    li.nav-item{
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 2%;
+    }
+
+    .right_border{
+        border-right: none;
+    }
+}
+
+@media screen and (max-width: 913px){
+    li.navbar-brand{
+        margin-right: 16px;
+        width: 150px;
+        height: 48px;
+    }
+
+    li.nav-item{
+        margin-left: 16px;
+        margin-right: 16px;
+        margin-top: 2%;
+    }
+}
+
+a.nav-link{
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.banner-container{
+    position: relative;
+}
+
+.banner-content{
+    position: absolute;
+    right: 7%;
+    top: 20%;
+}
+
+.banner-content-title{
+    font-size: x-large;
+    color: green;
+}
+
+.banner-content-subtitle{
+    font-size: medium;
+}
+
+@media screen and (max-width: 991px){
+    .banner-content-title{
+        font-size: medium;
+        color: green;
+    }
+    
+    .banner-content-subtitle{
+        font-size: small;
+    }
+
+    .btn-learn-more{
+        border-radius: 0%;
+        background-color: white;
+        color: green;
+        font-size: 12px;
+        font-weight: bold;
+        padding-left: 16px;
+        padding-right: 8px;
+    }
+}
+
+@media screen and (max-width: 790px){
+    .banner-content-title{
+        font-size: small;
+        color: green;
+    }
+    
+    .banner-content-subtitle{
+        font-size: x-small;
+    }
+
+    .banner-content{
+        position: absolute;
+        right: 2%;
+        top: 15%;
+    }
+
+    .btn-learn-more{
+        border-radius: 0%;
+        background-color: white;
+        color: green;
+        font-size: small;
+        font-weight: bold;
+        padding-left: 16px;
+        padding-right: 8px;
+    }
+}
+
+.noto-font{
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.btn-learn-more{
+    border-radius: 0%;
+    background-color: white;
+    color: green;
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 16px;
+    padding-right: 8px;
+}
+
+.div-connected-lifestyle{
+    padding: 24px;
+    border: 1px #e6e6e6 solid;
+    background-image: linear-gradient(#ffffff, #eeeeee);
+}
+
+.div-resources{
+    padding: 24px 48px 24px;
+    border: 1px #e6e6e6 solid;
+    background-image: linear-gradient(#ffffff, #eeeeee);
+}
+
+.footer{
+    background-image: url('assets/images/footer_bg.jpg');
+    padding-top: 24px;
+}
+
+.footer-link{
+    color: white;
+    font-size: small;
+    margin-right: 16px;
+}
+
+.cycle_slideshow_container{
+    position: fixed;
+    display: none;
+    width: 41.7em;
+    height: 26em;
+    z-index: 100;
+}
+
+.cycle_slideshow_container_v{
+    position: fixed;
+    display: none;
+    width: 41.7em;
+    height: 26em;
+    border-top: 40px white solid;
+    border-bottom: 15px white solid;
+    border-left: 15px white solid;
+    border-right: 15px white solid;
+    z-index: 90;
+}
+
+@media screen and (max-width: 775px){
+    .cycle_slideshow_container{
+        position: fixed;
+        display: none;
+        width: 25em;
+        height: 10em;
+        z-index: 100;
+    }
+    
+    .cycle_slideshow_container_v{
+        position: fixed;
+        display: none;
+        width: 30em;
+        height: 15em;
+        border-top: 40px white solid;
+        border-bottom: 15px white solid;
+        border-left: 15px white solid;
+        border-right: 15px white solid;
+        z-index: 90;
+    }
+}
+
+#overlay {
+    position: fixed;
+    display: none; 
+    width: 100%; 
+    height: 100%; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); 
+    z-index: 50; 
+}
