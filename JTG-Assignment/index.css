@@ -1,16 +1,21 @@
+/***** generic *****/
 body{
-    background-image: url('assets/images/main_bg.jpg');
-    background-repeat: no-repeat;
+    background: url('assets/images/main_bg.jpg') no-repeat;
 }
 
+.noto-font{
+    font-family: 'Noto Sans', sans-serif;
+}
+
+/***** navbar *****/
 .nav-bg-gradient{
     background-image: linear-gradient(to right, #d5d1d3, #eeeeee, #ffffff, #ffffff, #ffffff, #f5f5f5, #eeeeee, #eeeeee, #e6e6e6, #dfdfdf, #d8d8d8);
 }
 
 li.navbar-brand{
-    margin-right: 24px;
     width: 259px;
     height: 63px;
+    margin-right: 24px;
     margin-bottom: 16px;
 }
 
@@ -18,10 +23,6 @@ li.nav-item{
     margin-left: 24px;
     margin-right: 24px;
     margin-top: 2%;
-}
-
-.right_border{
-    border-right: 1px #d1d3d5 solid;
 }
 
 @media screen and (max-width: 991px){
@@ -33,10 +34,6 @@ li.nav-item{
         margin-left: 20px;
         margin-right: 20px;
         margin-top: 2%;
-    }
-
-    .right_border{
-        border-right: none;
     }
 }
 
@@ -59,6 +56,8 @@ a.nav-link{
     font-weight: bold;
     font-family: 'Noto Sans', sans-serif;
 }
+
+/***** banner-slider *****/
 
 .banner-container{
     position: relative;
@@ -127,10 +126,6 @@ a.nav-link{
     }
 }
 
-.noto-font{
-    font-family: 'Noto Sans', sans-serif;
-}
-
 .btn-learn-more{
     border-radius: 0%;
     background-color: white;
@@ -141,11 +136,25 @@ a.nav-link{
     padding-right: 8px;
 }
 
+/***** connected-lifestyle *****/
+
 .div-connected-lifestyle{
     padding: 24px;
     border: 1px #e6e6e6 solid;
     background-image: linear-gradient(#ffffff, #eeeeee);
 }
+
+.right_border{
+    border-right: 1px #d1d3d5 solid;
+}
+
+@media screen and (max-width: 991px){
+    .right_border{
+        border-right: none;
+    }
+}
+
+/***** media-resources *****/
 
 .div-resources{
     padding: 24px 48px 24px;
@@ -153,9 +162,23 @@ a.nav-link{
     background-image: linear-gradient(#ffffff, #eeeeee);
 }
 
+/***** footer *****/
+
 .footer{
     background-image: url('assets/images/footer_bg.jpg');
     padding-top: 24px;
+}
+#overlay {
+    position: fixed;
+    display: none; 
+    width: 100%; 
+    height: 100%; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); 
+    z-index: 50; 
 }
 
 .footer-link{
@@ -163,6 +186,8 @@ a.nav-link{
     font-size: small;
     margin-right: 16px;
 }
+
+/***** cycle2-slideshow *****/
 
 .cycle_slideshow_container{
     position: fixed;
@@ -204,17 +229,4 @@ a.nav-link{
         border-right: 15px white solid;
         z-index: 90;
     }
-}
-
-#overlay {
-    position: fixed;
-    display: none; 
-    width: 100%; 
-    height: 100%; 
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0,0,0,0.5); 
-    z-index: 50; 
 }
